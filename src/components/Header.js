@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Typical from "react-typical";
 import Switch from "react-switch";
+import "./stars.scss";
 
 class Header extends Component {
   titles = [];
@@ -35,11 +36,18 @@ class Header extends Component {
     }, (props, prevProp) => true);
 
     return (
-      <header id="home" style={{ height: window.innerHeight - 140, display: 'block' }}>
-        <div className="row aligner" style={{height: '100%'}}>
+      <header id="home" style={{ height: window.innerHeight, display: 'block' }}>
+        <div id="stars" />
+        <div id="stars2" />
+        <div id="stars3" />
+        <div className="row aligner" style={{height: '70%'}}>
           <div className="col-md-12">
             <div>
-              <span className="iconify header-icon" data-icon="la:laptop-code" data-inline="false"></span>
+              <img
+                height="200px"
+                src="images/transparent_profile.png"
+                alt="transparent_avatar"
+              />
               <br/>
               <h1 className="mb-0">
                 <Typical steps={[name]} wrapper="p" />
@@ -50,7 +58,7 @@ class Header extends Component {
               <Switch
                 checked={this.state.checked}
                 onChange={this.onThemeSwitchChange}
-                offColor="#baaa80"
+                offColor="#4A5899"
                 onColor="#353535"
                 className="react-switch mx-auto"
                 width={90}
