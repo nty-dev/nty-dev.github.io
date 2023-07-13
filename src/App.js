@@ -7,7 +7,15 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Navbar from "./components/Navbar";
 import "./components/stars.scss";
+
+import 'jquery/dist/jquery.min.js';
+import 'popper.js/dist/popper.min.js';
+import 'bootstrap/dist/js/bootstrap.min.js';
+import './libs/easing.js';
+import 'lightbox2/dist/js/lightbox.min.js';
+import './animate.css';
 
 class App extends Component {
 
@@ -16,43 +24,31 @@ class App extends Component {
     this.state = {
       foo: "bar",
       resumeData: {},
-      sharedData: {},
+      sharedData: {}
     };
+    this.applyPickedLanguage = this.applyPickedLanguage.bind(this);
   }
 
-  applyPickedLanguage(pickedLanguage, oppositeLangIconId) {
-    this.swapCurrentlyActiveLanguage(oppositeLangIconId);
-    document.documentElement.lang = pickedLanguage;
+  applyPickedLanguage() {
+    if (window.portfolio === true) {
+      window.portfolio = false;
+    } else {
+      window.portfolio = true;
+    };
     var resumePath =
-      document.documentElement.lang === window.$primaryLanguage
+      window.portfolio === true
         ? `res_software_engineer.json`
         : `res_content_creator.json`;
     var sharedPath =
-      document.documentElement.lang === window.$primaryLanguage
+      window.portfolio === true
         ? `portfolio_shared_data_swe.json`
         : `portfolio_shared_data_video.json`;
     this.loadResumeFromPath(resumePath);
     this.loadSharedData(sharedPath);
   }
 
-  swapCurrentlyActiveLanguage(oppositeLangIconId) {
-    var pickedLangIconId =
-      oppositeLangIconId === window.$primaryLanguageIconId
-        ? window.$secondaryLanguageIconId
-        : window.$primaryLanguageIconId;
-    document
-      .getElementById(oppositeLangIconId)
-      .removeAttribute("filter", "brightness(40%)");
-    document
-      .getElementById(pickedLangIconId)
-      .setAttribute("filter", "brightness(40%)");
-  }
-
   componentDidMount() {
-    this.applyPickedLanguage(
-      window.$primaryLanguage,
-      window.$secondaryLanguageIconId
-    );
+    this.applyPickedLanguage();
   }
 
   loadResumeFromPath(path) {
@@ -87,41 +83,11 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header sharedData={this.state.sharedData.basic_info} />
-        <div className="col-md-12 mx-auto text-center language">
-          <div
-            onClick={() =>
-              this.applyPickedLanguage(
-                window.$primaryLanguage,
-                window.$secondaryLanguageIconId
-              )
-            }
-            style={{ display: "inline" }}
-          >
-            <span
-              className="iconify language-icon mr-5"
-              data-icon="twemoji-flag-for-flag-united-kingdom"
-              data-inline="false"
-              id={window.$primaryLanguageIconId}
-            ></span>
-          </div>
-          <div
-            onClick={() =>
-              this.applyPickedLanguage(
-                window.$secondaryLanguage,
-                window.$primaryLanguageIconId
-              )
-            }
-            style={{ display: "inline" }}
-          >
-            <span
-              className="iconify language-icon"
-              data-icon="twemoji-flag-for-flag-poland"
-              data-inline="false"
-              id={window.$secondaryLanguageIconId}
-            ></span>
-          </div>
-        </div>
+        <Navbar />
+        <Header
+          sharedData={this.state.sharedData.basic_info}
+          applyPickedLanguage={this.applyPickedLanguage}
+        />
         <About
           resumeBasicInfo={this.state.resumeData.basic_info}
           sharedBasicInfo={this.state.sharedData.basic_info}

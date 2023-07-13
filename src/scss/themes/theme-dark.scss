@@ -1,4 +1,4 @@
-body[data-theme="dark"] {  
+body[data-theme="dark"] {
 
    @import '../src/scss/dark-slider.scss';
 
@@ -89,7 +89,7 @@ body[data-theme="dark"] {
       .vertical-timeline-element-icon {
          background: #919191 !important;
       }
-      @media only screen and (max-width: 1169px) { 
+      @media only screen and (max-width: 1169px) {
          .vertical-timeline-element-date {
             color: black;
          }
@@ -103,5 +103,75 @@ body[data-theme="dark"] {
 
    .close-icon {
       color: white;
+   }
+
+   .social-links-frontpage a,
+   .social-links-frontpage a:visited {
+   	color: white;
+   }
+
+   .social-links-frontpage a:hover,
+   .social-links-frontpage a:focus {
+   	color: grey;
+   }
+
+   .navbar-b.navbar-trans .nav-link,
+   .navbar-b.navbar-reduce .nav-link {
+     color: #fff;
+   }
+
+   .navbar-b.navbar-trans .nav-link:before {
+     background-color: #fff;
+   }
+
+   .navbar-b.navbar-trans .nav-link:hover {
+     color: #fff;
+   }
+
+   .navbar-b.navbar-trans .show > .nav-link,
+   .navbar-b.navbar-trans .active > .nav-link,
+   .navbar-b.navbar-trans .nav-link.show,
+   .navbar-b.navbar-trans .nav-link.active {
+     color: #fff;
+   }
+
+   .navbar-b.navbar-reduce {
+     transition: all .5s ease-in-out;
+     background-color: #000;
+     padding-top: 9px;
+     padding-bottom: 15px;
+   }
+
+   .navbar-b.navbar-reduce .nav-link {
+     color: #ebeaf5;
+   }
+
+   .navbar-b.navbar-reduce .nav-link:before {
+     background-color: #ebeaf5;
+   }
+
+   .navbar-b.navbar-reduce .nav-link:hover {
+     color: #ebeaf5;
+   }
+
+   .navbar-b.navbar-reduce .navbar-brand {
+     color: #ebeaf5;
+   }
+
+   .navbar-toggler span {
+     display: block;
+     background-color: #fff;
+     height: 3px;
+     width: 25px;
+     margin-top: 4px;
+     margin-bottom: 4px;
+     -webkit-transform: rotate(0deg);
+     transform: rotate(0deg);
+     left: 0;
+     opacity: 1;
+   }
+
+   .portfolio-switch-text {
+   	color: #fff;
    }
 }

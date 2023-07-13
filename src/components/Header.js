@@ -4,30 +4,35 @@ import Switch from "react-switch";
 import "./stars.scss";
 
 class Header extends Component {
-  titles = [];
-
   constructor() {
     super();
-    this.state = { checked: false };
-    this.onThemeSwitchChange = this.onThemeSwitchChange.bind(this);
-  }
+    this.state = {
+      checked: false,
+    };
+    this.onPortfolioChange = this.onPortfolioChange.bind(this);
+  };
 
-  onThemeSwitchChange(checked) {
-    this.setState({ checked });
-    this.setTheme();
-  }
+  onPortfolioChange(checked) {
+    this.setState({checked});
+    this.setPortfolio();
+  };
 
-  setTheme() {
-    var dataThemeAttribute = "data-theme";
-    var body = document.body;
-    var newTheme =
-      body.getAttribute(dataThemeAttribute) === "dark" ? "light" : "dark";
-    body.setAttribute(dataThemeAttribute, newTheme);
+  setPortfolio()  {
+    this.props.applyPickedLanguage();
   };
 
   render() {
     if (this.props.sharedData) {
       var name = this.props.sharedData.name;
+      var networks = this.props.sharedData.social.map(function (network) {
+        return (
+          <span key={network.name} className="m-4">
+            <a href={network.url} target="_blank" rel="noopener noreferrer">
+              <i className={network.class}></i>
+            </a>
+          </span>
+          );
+        });
       this.titles = this.props.sharedData.titles.map(x => [ x.toUpperCase(), 1500 ] ).flat();
     }
 
@@ -40,7 +45,7 @@ class Header extends Component {
         <div id="stars" />
         <div id="stars2" />
         <div id="stars3" />
-        <div className="row aligner" style={{height: '70%'}}>
+        <div className="row aligner" style={{height: '80%'}}>
           <div className="col-md-12">
             <div>
               <img
@@ -55,48 +60,54 @@ class Header extends Component {
               <div className="title-container">
                 <HeaderTitleTypeAnimation />
               </div>
-              <Switch
-                checked={this.state.checked}
-                onChange={this.onThemeSwitchChange}
-                offColor="#4A5899"
-                onColor="#353535"
-                className="react-switch mx-auto"
-                width={90}
-                height={40}
-                uncheckedIcon={
-                  <span
-                    className="iconify"
-                    data-icon="twemoji:owl"
-                    data-inline="false"
-                    style={{
-                      display: "block",
-                      height: "100%",
-                      fontSize: 25,
-                      textAlign: "end",
-                      marginLeft: "20px",
-                      color: "#353239",
-                    }}
-                  ></span>
-                }
-                checkedIcon={
-                  <span
-                    className="iconify"
-                    data-icon="noto-v1:sun-with-face"
-                    data-inline="false"
-                    style={{
-                      display: "block",
-                      height: "100%",
-                      fontSize: 25,
-                      textAlign: "end",
-                      marginLeft: "10px",
-                      color: "#353239",
-                    }}
-                  ></span>
-                }
-                id="icon-switch"
-              />
+              <div className="social-links-frontpage">{networks}</div>
             </div>
           </div>
+        </div>
+        <div className="portfolio-switch-container">
+          <h2 className="portfolio-switch-text">
+            Portfolio Switch
+          </h2>
+          <Switch
+            checked={this.state.checked}
+            onChange={this.onPortfolioChange}
+            offColor="#E4E6C3"
+            onColor="#C1666B"
+            className="react-switch mx-auto"
+            width={125}
+            height={60}
+            uncheckedIcon={
+              <span
+                className="iconify"
+                data-icon="solar:programming-bold"
+                data-inline="false"
+                style={{
+                  display: "block",
+                  height: "100%",
+                  fontSize: 40,
+                  textAlign: "end",
+                  marginLeft: "10px",
+                  color: "#000000",
+                }}
+              ></span>
+            }
+            checkedIcon={
+              <span
+                className="iconify"
+                data-icon="icon-park-solid:video"
+                data-inline="false"
+                style={{
+                  display: "block",
+                  height: "100%",
+                  fontSize: 40,
+                  textAlign: "end",
+                  marginLeft: "13px",
+                  color: "#000000",
+                }}
+              ></span>
+            }
+            id="icon-switch"
+          />
         </div>
       </header>
     );
