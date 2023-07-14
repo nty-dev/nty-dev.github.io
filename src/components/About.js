@@ -13,6 +13,7 @@ class About extends Component {
       var sectionName = this.props.resumeBasicInfo.section_name.about;
       var hello = this.props.resumeBasicInfo.description_header;
       var about = this.props.resumeBasicInfo.description;
+      var about_bold = this.props.resumeBasicInfo.description_bold;
     }
 
     return (
@@ -77,10 +78,13 @@ class About extends Component {
                     }}
                   >
                     <br />
-                    <span className="wave">{hello} :) </span>
+                    <span className="wave">{hello}</span>
                     <br />
                     <br />
                     {about}
+                    <br />
+                    <br />
+                    <span className="bold-about-line">{about_bold}</span>
                   </div>
                 </div>
               </div>

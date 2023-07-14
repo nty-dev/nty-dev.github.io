@@ -1,7 +1,8 @@
 {
     "basic_info": {
-      "description_header": "Hi",
-      "description": "👋 I'm Davina Griss. Fictional person for preview purposes :) I'm working with newest front-end frameworks like Angular, React and Vue. What you are seeing now is portfolio template from Dorota1997. If you like this portfolio template, make sure to ⭐ the repository to make it more recognizable for other users. Thank you 💜",
+      "description_header": "Hello!",
+      "description": "I am Tsay Yong, an aspiring software engineer who has been at it since 2017. I am a full-stack developer, with Javascript and Python as my languages of choice. Having taken part in tons of startup hackathons, as well as done plenty of personal projects, I have good experience with cross-platform development frameworks, mainly React Native, for building mobile applications.",
+      "description_bold": "I am excited to help you or your organization build the next big thing.",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
