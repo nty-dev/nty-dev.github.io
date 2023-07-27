@@ -1,0 +1,88 @@
+{
+    "basic_info": {
+      "name": "Neo Tsay Yong",
+      "titles": [ "Software Developer", "Full-Stack Software Engineer", "Python Developer", "JavaScript Developer" ],
+      "social": [
+        {
+          "name": "github",
+          "url": "https://github.com/nty-dev",
+          "class": "fab fa-github"
+        },
+        {
+          "name": "linkedin",
+          "url": "https://www.linkedin.com/in/neo-tsay-yong/",
+          "class": "fab fa-linkedin"
+        }
+      ],
+      "image": "profile_picture.png"
+    },
+    "skills": {
+      "icons": [
+        {
+          "name": "Python",
+          "class": "devicon-python-plain",
+          "level": "95"
+        },
+        {
+          "name": "JavaScript",
+          "class": "devicon-javascript-plain",
+          "level": "95"
+        },
+        {
+          "name": "Java",
+          "class": "devicon-java-plain",
+          "level": "95"
+        },
+        {
+          "name": "HTML 5",
+          "class": "devicon-html5-plain",
+          "level": "95"
+        },
+        {
+          "name": "PostgreSQL",
+          "class": "devicon-postgresql-plain",
+          "level": "95"
+        },
+        {
+          "name": "React",
+          "class": "devicon-react-plain",
+          "level": "95"
+        },
+        {
+          "name": "React Native",
+          "class": "devicon-react-plain",
+          "level": "95"
+        },
+        {
+          "name": "Django",
+          "class": "devicon-django-plain",
+          "level": "95"
+        },
+        {
+          "name": "Flask",
+          "class": "devicon-flask-plain",
+          "level": "95"
+        },
+        {
+          "name": "NodeJS",
+          "class": "devicon-nodejs-plain-wordmark",
+          "level": "95"
+        },
+        {
+          "name": "WordPress",
+          "class": "devicon-wordpress-plain",
+          "level": "95"
+        },
+        {
+          "name": "Linux",
+          "class": "devicon-linux-plain",
+          "level": "95"
+        },
+        {
+          "name": "GitHub",
+          "class": "devicon-github-plain",
+          "level": "95"
+        }
+      ]
+    }
+  }

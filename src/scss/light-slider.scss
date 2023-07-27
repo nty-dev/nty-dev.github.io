@@ -116,7 +116,10 @@ $content-background-color: #D7CAAA;
     display: flex;
     align-items: center;
     justify-content: center;
-    > img,
+    > img {
+      width: 100%;
+      object-fit: contain;
+    }
     > video {
       width: 100%;
       position: absolute;
@@ -187,9 +190,11 @@ $content-background-color: #D7CAAA;
     }
   }
   &__next {
+    color: white;
     right: 0;
   }
   &__prev {
+    color: white;
     left: 0;
   }
   &__box {
@@ -317,7 +322,7 @@ $content-background-color: #D7CAAA;
       height: 100%;
       border-radius: var(--organic-arrow-border-radius);
       width: var(--organic-arrow-thickness);
-      background-color: var(--organic-arrow-color);
+      background-color: black;
       transition: transform 0.15s ease-out, background-color 0.15s ease-out;
     }
     &:before {

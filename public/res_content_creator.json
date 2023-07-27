@@ -1,116 +1,163 @@
 {
     "basic_info": {
       "description_header": "Hello!",
-      "description": "I am Tsay Yong, an experienced video producer with 7 years of experience.",
+      "description": "I am Tsay Yong, a video producer and content creator, currently based in Singapore. I ran a Gaming YouTube Channel, which I started in 2017, that to date has gained over 17,000 subscribers, 3,000,000 views and over 10,000,000 minutes of watch-time. My area of expertise lies with video editing, where I possess over 6 years of hands-on experience. I am well-versed in utilizing platforms like Sony Vegas Pro and Adobe After Effects, which are my primary tools for crafting captivating visuals. With exposure to a content writing internship, I have tons of experience dealing with digital media and know the key metrics that drive clicks and hold attention in a digital space.",
+      "description_2": "Having run a decently successful YouTube channel and substantial knowledge with software engineering, I am familiar with all sides of the coin when it comes to successful and effective digital marketing. With my recent experience covering media for the Singapore Army, I have the required understanding to edit your montages, wedding videos or movies - with added effects too!",
+      "description_bold": "I am excited to bring your visions and ideas to life.",
       "section_name": {
         "about": "About me",
-        "projects": "Projects",
+        "projects": "Showroom",
         "skills": "Skills",
         "experience": "Experience"
-      }
+      },
+      "mainTechnologies": [
+        "sony-vegas",
+        "devicon-aftereffects-plain",
+        "devicon-photoshop-plain"
+      ]
     },
     "projects": [
       {
-        "title": "Animal Shelter",
-        "startDate": "2020",
-        "description": "Najbardziej rozbudowana aplikacja nad którą miałam okazję pracować. Poznałam dużo technologii a mój kod by sprawdzany przez super opiekuna. Aplikacja obsługuje wszystkie procesy adopcji i pozwala na przechowywanie wszelkiej dokumentacji związanej z adopcją zwierząt ze schroniska.",
+        "title": "99.co",
+        "startDate": "2019",
+        "description": "As a content writer, I wrote articles for 99.co regarding housing and development, to drive traffic to the 99.co site. This is part of their Search Engine Optimization Effort.",
         "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
+          "images/video/99_co/article.png",
+          "images/video/99_co/talk.png"
         ],
-        "url": "",
+        "url": "https://www.99.co/singapore/insider/urban-farming-tips-for-non-landed-properties/",
+        "url_icon": "fab fa-github",
         "technologies": [
           {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
+            "class": "devicon-google-plain",
+            "name": "SEO"
           },
           {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
+            "class": "contentwriting",
+            "name": "Content Writing"
           }
         ]
       },
       {
-        "title": "Photography",
-        "startDate": "2018",
-        "description": "Osobisty projekt na przedmiot ze studiów. Byłam odpowiedzilna za testowanie aplikacji, która optymalizuje zdjęcia z pomocą popularnych algorytmów używanych przed edytory grafiki takie jak Pixlr czy Adobe Photoshop. Otrzymałam 5-tkę za projekt :)",
+        "title": "Binner",
+        "startDate": "2017 - 2021",
+        "description": "A Minecraft YouTube channel that I started in 2017. It was a fun journey making content on YouTube and slowly gaining a following. My content started out being general Minecraft gigs, but eventually specialized into Hypixel Skyblock as the gamemode was attracting a lot of attention. To date, the channel has gained over 17,000 subscribers, 3,000,000 views and over 10,000,000 minutes of watchtime.",
         "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
+          "images/video/Binner/1.png",
+          "images/video/Binner/2.png",
+          "images/video/Binner/3.png"
         ],
-        "url": "https://github.com",
+        "url": "https://www.youtube.com/c/binnerminecraft",
+        "url_icon": "fab fa-github",
         "technologies": [
           {
-            "class": "devicon-react-original",
-            "name": "React"
+            "class": "fab fa-youtube",
+            "name": "YouTube"
           },
           {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
+            "class": "minecraft-logo",
+            "name": "Minecraft"
+          },
+          {
+            "class": "obs",
+            "name": "OBS"
+          },
+          {
+            "class": "sony-vegas-small",
+            "name": "Sony Vegas Pro"
           }
         ]
       },
       {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "Jedna z pierwszych aplikacji nad którymi pracowałam na stażu. Musiałam przygotować front-end dla aplikacji, która pokazuje modele 3D znanych budynków. To był także mój pierwszy projekt w frameworku Angular. Dużo się nauczyłam!",
+        "title": "Video Producer @ SAF",
+        "startDate": "2022 - 2023",
+        "description": "I produced video content that documented the journey of NSFs completing their National Service in 2nd Battalion Singapore Infantry Regiment. I also produced video highlights of key bilateral exercises between Singapore and its neighboring countries, as well as Change of Command videos, which feature well wishes for commanders as a heartfelt farewell after their completion of their tour of duty.",
         "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
+          "images/video/2SIR/BDECOC.jpg",
+          "images/video/2SIR/cool.jpg",
+          "images/video/2SIR/milestone_ceremony.jpeg"
         ],
         "url": "https://github.com",
+        "url_icon": "fab fa-github",
         "technologies": [
           {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
+            "class": "sony-vegas-small",
+            "name": "Sony Vegas Pro"
           },
           {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
+            "class": "devicon-aftereffects-plain",
+            "name": "Adobe After Effects"
           },
           {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
+            "class": "devicon-photoshop-plain",
+            "name": "Adobe Photoshop"
+          },
+          {
+            "class": "devicon-canva-plain",
+            "name": "Canva"
           }
         ]
       }
     ],
     "experience": [
       {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - obecnie",
+        "company": "Singapore Army",
+        "title": "Video Producer",
+        "years": "11.2022 - Present",
         "mainTech": [
-          "Angular 8/9/10"
+          "Sony Vegas Pro"
+        ],
+        "achievements": [
+          "Produce videos featuring the journey of NSFs in 2 SIR",
+          "Won Commanding Officer Coin for covering Exercise Maju Bersama, a bilateral exercise between Singapore and Brunei"
         ],
         "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          "Angular Material"
-        ]
+          "Sony Vegas Pro",
+          "Adobe After Effects",
+          "Adobe Photoshop",
+          "Canva"
+        ],
+        "icon": "fas fa-swords"
       },
       {
-        "company": "Serros Solutions",
-        "title": "Stażystka",
-        "years": "01.2018 - 09.2019",
+        "company": "YouTuber",
+        "title": "Binner - A Minecraft Channel",
+        "years": "02.2017 - 01.2021",
         "mainTech": [
-          "Angular 7/8"
+          "Minecraft"
+        ],
+        "achievements": [
+          "A Minecraft Channel that focused on Hypixel Skyblock, a MMORPG built in Minecraft",
+          "Over 17,000 Subscribers",
+          "Over 3,000,000 Views",
+          "Over 10,000,000 Minutes of Watch-time"
         ],
         "technologies": [
-          "REST API",
-          "RxJS",
-          "Swagger",
-          "JavaScript",
-          "DHTMLX Gantt"
-        ]
+          "OBS",
+          "Sony Vegas Pro"
+        ],
+        "icon": "fab fa-youtube",
+        "url": "https://www.youtube.com/c/binnerminecraft",
+        "url_icon": "fab fa-youtube fa-3x"
+      },
+      {
+        "company": "99.co",
+        "title": "Content Writer",
+        "years": "08.2019",
+        "mainTech": [
+          "Search Engine Optimisation"
+        ],
+        "achievements": [
+          "Wrote articles for 99.co regarding housing and development"
+        ],
+        "technologies": [
+          "Web Content Writing",
+          "SEO",
+          "Digital Marketing"
+        ],
+        "icon": "far fa-search-location",
+        "url": "https://www.99.co/singapore/insider/urban-farming-tips-for-non-landed-properties/",
+        "url_icon": "fad fa-browser fa-3x"
       }
     ]
   }

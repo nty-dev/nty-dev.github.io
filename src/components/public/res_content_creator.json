@@ -1,0 +1,158 @@
+{
+    "basic_info": {
+      "description_header": "Hello!",
+      "description": "I am Tsay Yong, a video producer and content creator, currently based in Singapore. I ran a Gaming YouTube Channel, which I started in 2017, that to date has gained over 17,000 subscribers, 3,000,000 views and over 10,000,000 minutes of watch-time. My area of expertise lies with video editing, where I possess over 6 years of hands-on experience. I am well-versed in utilizing platforms like Sony Vegas Pro and Adobe After Effects, which are my primary tools for crafting captivating visuals. With exposure to a content writing internship, I have tons of experience dealing with digital media and know the key metrics that drive clicks and hold attention in a digital space.",
+      "description_2": "Having run a decently successful YouTube channel and substantial knowledge with software engineering, I am familiar with all sides of the coin when it comes to successful and effective digital marketing. With my recent experience covering media for the Singapore Army, I have the required understanding to edit your montages, wedding videos or movies - with added effects too!",
+      "description_bold": "I am excited to bring your visions and ideas to life.",
+      "section_name": {
+        "about": "About me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "experience": "Experience"
+      }
+    },
+    "projects": [
+      {
+        "title": "99.co",
+        "startDate": "2019",
+        "description": "As a content writer, I wrote articles for 99.co regarding housing and development, to drive traffic to the 99.co site. This is part of their Search Engine Optimization Effort.",
+        "images": [
+          "images/video/99_co/article.png",
+          "images/video/99_co/talk.png"
+        ],
+        "url": "https://www.99.co/singapore/insider/urban-farming-tips-for-non-landed-properties/",
+        "url_icon": "fab fa-github",
+        "technologies": [
+          {
+            "class": "devicon-google-plain",
+            "name": "SEO"
+          },
+          {
+            "class": "contentwriting",
+            "name": "Content Writing"
+          }
+        ]
+      },
+      {
+        "title": "Binner",
+        "startDate": "2017 - 2021",
+        "description": "A Minecraft YouTube channel that I started in 2017. It was a fun journey making content on YouTube and slowly gaining a following. My content started out being general Minecraft gigs, but eventually specialized into Hypixel Skyblock as the gamemode was attracting a lot of attention. To date, the channel has gained over 17,000 subscribers, 3,000,000 views and over 10,000,000 minutes of watchtime.",
+        "images": [
+          "images/video/Binner/1.png",
+          "images/video/Binner/2.png",
+          "images/video/Binner/3.png"
+        ],
+        "url": "https://www.youtube.com/c/binnerminecraft",
+        "url_icon": "fab fa-github",
+        "technologies": [
+          {
+            "class": "fab fa-youtube",
+            "name": "YouTube"
+          },
+          {
+            "class": "minecraft-logo",
+            "name": "Minecraft"
+          },
+          {
+            "class": "obs",
+            "name": "OBS"
+          },
+          {
+            "class": "sony-vegas-small",
+            "name": "Sony Vegas Pro"
+          }
+        ]
+      },
+      {
+        "title": "Video Producer @ SAF",
+        "startDate": "2022 - 2023",
+        "description": "I produced video content that documented the journey of NSFs completing their National Service in 2nd Battalion Singapore Infantry Regiment. I also produced video highlights of key bilateral exercises between Singapore and its neighboring countries, as well as Change of Command videos, which feature well wishes for commanders as a heartfelt farewell after their completion of their tour of duty.",
+        "images": [
+          "images/video/2SIR/BDECOC.jpg",
+          "images/video/2SIR/cool.jpg",
+          "images/video/2SIR/milestone_ceremony.jpeg"
+        ],
+        "url": "https://github.com",
+        "url_icon": "fab fa-github",
+        "technologies": [
+          {
+            "class": "sony-vegas-small",
+            "name": "Sony Vegas Pro"
+          },
+          {
+            "class": "devicon-aftereffects-plain",
+            "name": "Adobe After Effects"
+          },
+          {
+            "class": "devicon-photoshop-plain",
+            "name": "Adobe Photoshop"
+          },
+          {
+            "class": "devicon-canva-plain",
+            "name": "Canva"
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Singapore Army",
+        "title": "Video Producer",
+        "years": "11.2022 - Present",
+        "mainTech": [
+          "Sony Vegas Pro"
+        ],
+        "achievements": [
+          "Produce videos featuring the journey of NSFs in 2 SIR",
+          "Won Commanding Officer Coin for covering Exercise Maju Bersama, a bilateral exercise between Singapore and Brunei"
+        ],
+        "technologies": [
+          "Sony Vegas Pro",
+          "Adobe After Effects",
+          "Adobe Photoshop",
+          "Canva"
+        ],
+        "icon": "fas fa-swords"
+      },
+      {
+        "company": "YouTuber",
+        "title": "Binner - A Minecraft Channel",
+        "years": "02.2017 - 01.2021",
+        "mainTech": [
+          "Minecraft"
+        ],
+        "achievements": [
+          "A Minecraft Channel that focused on Hypixel Skyblock, a MMORPG built in Minecraft",
+          "Over 17,000 Subscribers",
+          "Over 3,000,000 Views",
+          "Over 10,000,000 Minutes of Watch-time"
+        ],
+        "technologies": [
+          "OBS",
+          "Sony Vegas Pro"
+        ],
+        "icon": "fab fa-youtube",
+        "url": "https://www.youtube.com/c/binnerminecraft",
+        "url_icon": "fab fa-youtube fa-3x"
+      },
+      {
+        "company": "99.co",
+        "title": "Content Writer",
+        "years": "08.2019",
+        "mainTech": [
+          "Search Engine Optimisation"
+        ],
+        "achievements": [
+          "Wrote articles for 99.co regarding housing and development"
+        ],
+        "technologies": [
+          "Web Content Writing",
+          "SEO",
+          "Digital Marketing"
+        ],
+        "icon": "far fa-search-location",
+        "url": "https://www.99.co/singapore/insider/urban-farming-tips-for-non-landed-properties/",
+        "url_icon": "fad fa-browser fa-3x"
+      }
+    ]
+  }

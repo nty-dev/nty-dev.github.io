@@ -66,6 +66,13 @@ body[data-theme="dark"] {
       }
    }
 
+   #contact {
+      background: #494949;
+      h1 span {
+         color: white;
+      }
+   }
+
    #resume {
       filter: brightness(80%);
       background: #5b5b5b;
@@ -173,5 +180,9 @@ body[data-theme="dark"] {
 
    .portfolio-switch-text {
    	color: #fff;
+   }
+
+   .about-icons {
+     color: #fff;
    }
 }

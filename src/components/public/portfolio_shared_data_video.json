@@ -1,0 +1,48 @@
+{
+    "basic_info": {
+      "name": "Neo Tsay Yong",
+      "titles": [ "Content Creator", "Video Editor", "YouTuber", "Video Producer" ],
+      "social": [
+        {
+          "name": "github",
+          "url": "https://github.com/nty-dev",
+          "class": "fab fa-github"
+        },
+        {
+          "name": "linkedin",
+          "url": "https://www.linkedin.com/in/neo-tsay-yong/",
+          "class": "fab fa-linkedin"
+        }
+      ],
+      "image": "profile_picture.png"
+    },
+    "skills": {
+      "icons": [
+        {
+          "name": "Sony Vegas",
+          "class": "sony-vegas",
+          "level": "95"
+        },
+        {
+          "name": "After Effects",
+          "class": "devicon-aftereffects-plain",
+          "level": "95"
+        },
+        {
+          "name": "Photoshop",
+          "class": "devicon-photoshop-line",
+          "level": "95"
+        },
+        {
+          "name": "Canva",
+          "class": "devicon-canva-original",
+          "level": "95"
+        },
+        {
+          "name": "WordPress",
+          "class": "devicon-wordpress-plain",
+          "level": "95"
+        }
+      ]
+    }
+  }

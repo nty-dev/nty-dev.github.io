@@ -1,8 +1,4 @@
 import React, { Component } from "react";
-import { Icon } from "@iconify/react";
-import angularIcon from "@iconify/icons-logos/angular-icon";
-import reactIcon from "@iconify/icons-logos/react";
-import vueIcon from "@iconify/icons-logos/vue";
 
 class About extends Component {
   render() {
@@ -13,7 +9,16 @@ class About extends Component {
       var sectionName = this.props.resumeBasicInfo.section_name.about;
       var hello = this.props.resumeBasicInfo.description_header;
       var about = this.props.resumeBasicInfo.description;
+      var about2 = this.props.resumeBasicInfo.description_2;
       var about_bold = this.props.resumeBasicInfo.description_bold;
+      var mainTech = this.props.resumeBasicInfo.mainTechnologies.map((tech, i) => {
+        return(
+          <i
+            className={tech + " about-icons"}
+            style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
+          />
+        )
+      })
     }
 
     return (
@@ -22,6 +27,7 @@ class About extends Component {
           <h1 style={{ color: "black" }}>
             <span>{sectionName}</span>
           </h1>
+          <div style={{height:50}} />
           <div className="row center mx-auto mb-5">
             <div className="col-md-4 mb-5 center">
               <div className="polaroid">
@@ -31,18 +37,7 @@ class About extends Component {
                     src={profilepic}
                     alt="Avatar placeholder"
                   />
-                  <Icon
-                    icon={angularIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  />
-                  <Icon
-                    icon={reactIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  />
-                  <Icon
-                    icon={vueIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  />
+                  {mainTech}
                 </span>
               </div>
             </div>
@@ -84,7 +79,13 @@ class About extends Component {
                     {about}
                     <br />
                     <br />
+                    {about2}
+                    <br />
+                    <br />
                     <span className="bold-about-line">{about_bold}</span>
+                    <br />
+                    <br />
+                    <text>I am currently serving my National Service, ORD'ing 7 Feb 2024.</text>
                   </div>
                 </div>
               </div>

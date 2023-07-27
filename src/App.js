@@ -8,6 +8,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Navbar from "./components/Navbar";
+import Contact from "./components/Contact";
 import "./components/stars.scss";
 
 import 'jquery/dist/jquery.min.js';
@@ -92,18 +93,19 @@ class App extends Component {
           resumeBasicInfo={this.state.resumeData.basic_info}
           sharedBasicInfo={this.state.sharedData.basic_info}
         />
-        <Projects
-          resumeProjects={this.state.resumeData.projects}
+        <Experience
+          resumeExperience={this.state.resumeData.experience}
           resumeBasicInfo={this.state.resumeData.basic_info}
         />
         <Skills
           sharedSkills={this.state.sharedData.skills}
           resumeBasicInfo={this.state.resumeData.basic_info}
         />
-        <Experience
-          resumeExperience={this.state.resumeData.experience}
+        <Projects
+          resumeProjects={this.state.resumeData.projects}
           resumeBasicInfo={this.state.resumeData.basic_info}
         />
+        <Contact sharedBasicInfo={this.state.sharedData.basic_info} />
         <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
       </div>
     );

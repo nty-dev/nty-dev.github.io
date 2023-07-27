@@ -19,10 +19,10 @@ class ProjectDetailsModal extends Component {
               <span>
                 <div className="text-center">
                   <i className={icons.class} style={{ fontSize: "300%" }}>
-                    <p className="text-center" style={{ fontSize: "30%" }}>
-                      {icons.name}
-                    </p>
                   </i>
+                  <p className="text-center tech-font" style={{ fontSize: "90%" }}>
+                    {icons.name}
+                  </p>
                 </div>
               </span>
             </li>
@@ -30,7 +30,7 @@ class ProjectDetailsModal extends Component {
         });
         if (this.props.data.images) {
           var img = images.map((elem, i) => {
-            return <div key={i} data-src={elem} />;
+            return <div key={i} data-src={elem}/>;
           });
         }
       }
@@ -87,7 +87,7 @@ class ProjectDetailsModal extends Component {
                   className="link-href"
                 >
                   <i
-                    className="fas fa-external-link-alt"
+                    className="fas fa-external-link"
                     style={{ marginLeft: "10px" }}
                   ></i>
                 </a>

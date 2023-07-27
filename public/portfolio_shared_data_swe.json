@@ -19,49 +19,69 @@
     "skills": {
       "icons": [
         {
+          "name": "Python",
+          "class": "devicon-python-plain",
+          "level": "95"
+        },
+        {
+          "name": "JavaScript",
+          "class": "devicon-javascript-plain",
+          "level": "95"
+        },
+        {
+          "name": "Java",
+          "class": "devicon-java-plain",
+          "level": "95"
+        },
+        {
           "name": "HTML 5",
           "class": "devicon-html5-plain",
           "level": "95"
         },
         {
-          "name": "CSS 3",
-          "class": "devicon-css3-plain",
+          "name": "PostgreSQL",
+          "class": "devicon-postgresql-plain",
           "level": "95"
         },
         {
-          "name": "Angular",
-          "class": "devicon-angularjs-plain",
-          "level": "80"
+          "name": "React",
+          "class": "devicon-react-plain",
+          "level": "95"
         },
         {
-          "name": "TypeScript",
-          "class": "devicon-typescript-plain",
-          "level": "90"
+          "name": "React Native",
+          "class": "devicon-react-plain",
+          "level": "95"
         },
         {
-          "name": "JavaScript",
-          "class": "devicon-javascript-plain",
-          "level": "70"
+          "name": "Django",
+          "class": "devicon-django-plain",
+          "level": "95"
         },
         {
-          "name": "Sass",
-          "class": "devicon-sass-original",
-          "level": "75"
+          "name": "Flask",
+          "class": "devicon-flask-plain",
+          "level": "95"
         },
         {
-          "name": "Bootstrap",
-          "class": "devicon-bootstrap-plain",
-          "level": "85"
+          "name": "NodeJS",
+          "class": "devicon-nodejs-plain-wordmark",
+          "level": "95"
         },
         {
-          "name": "C#",
-          "class": "devicon-csharp-plain",
-          "level": "65"
+          "name": "WordPress",
+          "class": "devicon-wordpress-plain",
+          "level": "95"
         },
         {
-          "name": "MySql",
-          "class": "devicon-mysql-plain",
-          "level": "60"
+          "name": "Linux",
+          "class": "devicon-linux-plain",
+          "level": "95"
+        },
+        {
+          "name": "GitHub",
+          "class": "devicon-github-plain",
+          "level": "95"
         }
       ]
     }

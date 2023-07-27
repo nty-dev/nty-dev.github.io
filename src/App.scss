@@ -113,6 +113,7 @@ header h1 {
 	border: 5px solid #D7CAAA;
 }
 
+
 .slider-tab {
 	background-color: #D7CAAA;
 	height: 25px;
@@ -210,6 +211,60 @@ header h1 {
 	transition: all .20s linear;
 	z-index: 0;
 	position: relative;
+}
+
+.card {
+	-webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+}
+
+.contact-meet img {
+}
+
+.contact-meet-text {
+	display: inline;
+	margin-left: 15px;
+	text-align: left;
+	vertical-align: middle;
+	float: left;
+}
+
+.contact-meet-text h1 {
+	margin-top: -5px;
+}
+
+.contact-meet-span {
+	background: #ffffff;
+	margin: 55px 75px 30px;
+	padding: 15px 15px 30px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+	-webkit-transition: all .20s linear;
+	-moz-transition: all .20s linear;
+	transition: all .20s linear;
+	z-index: 0;
+	position: relative;
+	align-items: center;
+}
+
+.contact-meet-details {
+	margin-top: 15px;
+	text-align: left
+}
+
+.contact-meet-line {
+	border-top: 3px solid black;
+}
+
+.contact-details {
+	margin-left:auto;
+	margin-right:auto;
+	height:auto;
+	width:auto;
 }
 
 .link-href {
@@ -369,6 +424,10 @@ header h1 {
 	padding-bottom: 5%;
 }
 
+#contact {
+	background: #fff;
+}
+
 .portfolio-item {
 	max-width: 100%;
 	margin-bottom: 15px;
@@ -406,6 +465,56 @@ header h1 {
 	width: 100%;
 	overflow: hidden;
 	padding-bottom: 10%;
+}
+
+.sony-vegas {
+	content: url("images/Vegas_Pro_15.0.png");
+	height:37px;
+}
+
+.papermc {
+	content: url("images/papermc.png");
+	height:25px;
+}
+
+.craftbukkit {
+	content: url("images/bukkit.png");
+	height:25px;
+}
+
+.contentwriting {
+	content: url("images/content_writing.png");
+	height:30px;
+}
+
+.minecraft-logo {
+	content: url("images/minecraft.png");
+	height:25px;
+}
+
+.obs {
+	content: url("images/obs.png");
+	height:25px;
+}
+
+.sony-vegas-small {
+	content: url("images/Vegas_Pro_15.0.png");
+	height:25px;
+}
+
+.experience-link {
+	position: absolute;
+	right: 0;
+	margin-right:20px;
+}
+
+.experience-url-icon {
+	color: #101314;
+}
+
+
+.tech-font {
+	font-family: "Times New Roman", Times, serif;
 }
 
 .section-title {
