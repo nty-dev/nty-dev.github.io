@@ -1,6 +1,7 @@
 {
   "name": "react-frontend-dev-portfolio",
   "version": "0.1.0",
+  "homepage": "https://nty-dev.github.io",
   "private": true,
   "dependencies": {
     "@popperjs/core": "^2.11.8",
@@ -22,8 +23,10 @@
     "react-vertical-timeline-component": "^3.3.1"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts --openssl-legacy-provider build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts --openssl-legacy-provider start start",
+    "build": "react-scripts --openssl-legacy-provider start build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
