@@ -1,0 +1,229 @@
+{
+    "basic_info": {
+      "description_header": "Hello!",
+      "description": "I am Tsay Yong, an aspiring software engineer who has been at it since 2017, currently based in Singapore. I am a full-stack developer, with Javascript(~3 YOE) and Python(~5 YOE) as my languages of choice. Having taken part in tons of startup hackathons, as well as done plenty of personal projects, I have good experience with cross-platform development frameworks, for building mobile applications, alongside great backend development experience with frameworks like Django.",
+      "description_2": "With approximately five years of experience in YouTube content creation and various video production endeavors, I have developed extensive expertise in the realm of digital marketing and visual computing (click on portfolio switch to learn more). Moreover, my recent exploration of finance has piqued my interest, leading me to delve into investment research for personal enjoyment. I find games of probabilities, such as Poker, particularly captivating, and I am eager to explore potential opportunities in fields such as quantitative trading that show great relation to the great game of skilled chance.",
+      "description_bold": "I am excited to help you or your organization build the next big thing.",
+      "section_name": {
+        "about": "About me",
+        "projects": "Showroom",
+        "skills": "Skills",
+        "experience": "Experience"
+      },
+      "mainTechnologies": [
+        "fab fa-python",
+        "fab fa-js",
+        "fab fa-java"
+      ]
+    },
+    "projects": [
+      {
+        "title": "Pixorift",
+        "startDate": "2019",
+        "description": "The base concept of this App is that it is a game, in which players have to find particular objects in the world to photograph. Upon taking that photo, the app then uses Machine Learning to do object recognition and if it passes the test case, the user then receives game points. The app has social aspects to allow users to share their progress with each other.",
+        "images": [
+          "images/coding/pixorift/pixorift_logo.png"
+        ],
+        "url": "https://github.com/nty-dev/Pixorift",
+        "url_icon": "fab fa-github",
+        "technologies": [
+          {
+            "class": "devicon-python-plain",
+            "name": "Python"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "Javascript"
+          },
+          {
+            "class": "devicon-react-plain",
+            "name": "React Native"
+          },
+          {
+            "class": "devicon-django-plain",
+            "name": "Django"
+          }
+        ]
+      },
+      {
+        "title": "Class Minecraft Server",
+        "startDate": "2020",
+        "description": "During the COVID-19 lockdown, many of my classmates were bored to tears at home. Hence, we decided to start a Minecraft Server to kill time, in which I ran with my coding knowledge. To create a unique experience, I wrote custom plugins (modifications to the game) for the server in order to let the players have a more enjoyable time, in the process, learn Java.",
+        "images": [
+          "images/coding/minecraft_server/map.png",
+          "images/coding/minecraft_server/perk_shop.png",
+          "images/coding/minecraft_server/godly_powers.png"
+        ],
+        "url": "https://github.com/nty-dev/class_minecraft_server_plugins",
+        "url_icon": "fab fa-github",
+        "technologies": [
+          {
+            "class": "devicon-java-plain",
+            "name": "Java"
+          },
+          {
+            "class": "papermc",
+            "name": "PaperMC"
+          },
+          {
+            "class": "craftbukkit",
+            "name": "CraftBukkit"
+          }
+        ]
+      },
+      {
+        "title": "ZapQ - A Virtual Queuing App",
+        "startDate": "2021",
+        "description": "During the COVID-19 pandemic, it was dangerous to spend excessive time outside due to transmission risk - one such high risk activity was queuing. This app aims to ditch the physical queue, adopting one virtually instead.",
+        "images": [
+          "images/coding/zapq/1.png",
+          "images/coding/zapq/2.png"
+        ],
+        "url": "https://github.com/ChenNuode/hafFULLhafempty",
+        "url_icon": "fab fa-github",
+        "technologies": [
+          {
+            "class": "devicon-python-plain",
+            "name": "Python"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "Javascript"
+          },
+          {
+            "class": "devicon-react-plain",
+            "name": "React Native"
+          },
+          {
+            "class": "devicon-django-plain",
+            "name": "Django"
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Raffles Entrepreneur's Network",
+        "title": "Software Engineer",
+        "years": "02.2020 - 08.2021",
+        "mainTech": [
+          "Python",
+          "WordPress"
+        ],
+        "achievements": [
+          "Wrote a Python Script that helped with inventory accounting, resulting in a 10% reduction in sale time and 90% time reduction in profit and stocks accounting post sale",
+          "Designed a WordPress website to help the CCA's marketing effort, resulting in increased sales"
+        ],
+        "technologies": [
+          "Python",
+          "Google API",
+          "WordPress"
+        ],
+        "icon": "fas fa-file-invoice-dollar",
+        "url": "https://github.com/nty-dev/REN_inv_mgmt",
+        "url_icon": "fab fa-github fa-3x"
+      },
+      {
+        "company": "Code-EXP Hackathon",
+        "title": "ZapQ - a virtual queuing app",
+        "years": "06.2021",
+        "mainTech": [
+          "React Native",
+          "Django"
+        ],
+        "achievements": [
+          "Developed the backend REST framework",
+          "Contribtued to the System Design for the project"
+        ],
+        "technologies": [
+          "Javascript",
+          "Python",
+          "React Native",
+          "Django",
+          "GitHub"
+        ],
+        "icon": "fas fa-code",
+        "url": "https://github.com/ChenNuode/hafFULLhafempty",
+        "url_icon": "fab fa-github fa-3x"
+      },
+      {
+        "company": "Class Server",
+        "title": "Minecraft Server Developer",
+        "years": "05.2020 - 01.2021",
+        "mainTech": [
+          "Java"
+        ],
+        "achievements": [
+          "Deployed a Minecraft Server with custom coded plugins",
+          "Maintained the server through balance updates and bug fixes"
+        ],
+        "technologies": [
+          "Java",
+          "PaperMC"
+        ],
+        "icon": "fab fa-java",
+        "url": "https://github.com/nty-dev/class_minecraft_server_plugins",
+        "url_icon": "fab fa-github fa-3x"
+      },
+      {
+        "company": "DSTA",
+        "title": "Software Engineer Internship",
+        "years": "10.2019",
+        "mainTech": [
+          "Python"
+        ],
+        "achievements": [
+          "Wrote a predictive model to estimate potential future ship breakdowns"
+        ],
+        "technologies": [
+          "Python",
+          "PyTorch",
+          "AI"
+        ],
+        "icon": "fas fa-ship"
+      },
+      {
+        "company": "Gnowbe Pte Ltd",
+        "title": "Software Engineer Internship",
+        "years": "09.2019",
+        "mainTech": [
+          "Python"
+        ],
+        "achievements": [
+          "Coded Gnowbe Auto-Marker(GAP)",
+          "Wrote a Calender Planner script for employees"
+        ],
+        "technologies": [
+          "Python",
+          "Natural Language Processing",
+          "AI"
+        ],
+        "icon": "far fa-money-check-edit"
+      },
+      {
+        "company": "School Final Project",
+        "title": "Pixorift",
+        "years": "01.2019 - 10.2019",
+        "mainTech": [
+          "React Native",
+          "Django"
+        ],
+        "achievements": [
+          "Coded a gamified mobile application that used Object Recognition technology",
+          "Wrote a REST framework"
+        ],
+        "technologies": [
+          "Python",
+          "JavaScript",
+          "React Native",
+          "Django",
+          "REST framework",
+          "Tensorflow AI",
+          "Object Recognition"
+        ],
+        "icon": "fas fa-mobile-alt",
+        "url": "https://github.com/nty-dev/pixorift",
+        "url_icon": "fab fa-github fa-3x"
+      }
+    ]
+  }
