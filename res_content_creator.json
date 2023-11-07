@@ -20,7 +20,7 @@
       {
         "title": "99.co",
         "startDate": "2019",
-        "description": "As a content writer, I wrote articles for 99.co regarding housing and development, to drive traffic to the 99.co site. This is part of their Search Engine Optimization Effort.",
+        "description": "As a content writer, I wrote articles for 99.co regarding housing and development, to drive traffic to the 99.co site, as part of their Search Engine Optimization Effort.",
         "images": [
           "images/video/99_co/article.png",
           "images/video/99_co/talk.png"
@@ -41,7 +41,7 @@
       {
         "title": "Binner",
         "startDate": "2017 - 2021",
-        "description": "A Minecraft YouTube channel that I started in 2017. It was a fun journey making content on YouTube and slowly gaining a following. My content started out being general Minecraft gigs, but eventually specialized into Hypixel Skyblock as the gamemode was attracting a lot of attention. To date, the channel has gained over 17,000 subscribers, 3,000,000 views and over 10,000,000 minutes of watchtime.",
+        "description": "A Minecraft YouTube channel that I started in 2017. My content started out being general Minecraft gigs, but eventually specialized into Hypixel Skyblock as the gamemode was attracting a lot of attention. To date, the channel has gained over 17,000 subscribers, 3,000,000 views and over 10,000,000 minutes of watchtime.",
         "images": [
           "images/video/Binner/1.png",
           "images/video/Binner/2.png",
@@ -71,7 +71,7 @@
       {
         "title": "Video Producer @ SAF",
         "startDate": "2022 - 2023",
-        "description": "I produced video content that documented the journey of NSFs completing their National Service in 2nd Battalion Singapore Infantry Regiment. I also produced video highlights of key bilateral exercises between Singapore and its neighboring countries, as well as Change of Command videos, which feature well wishes for commanders as a heartfelt farewell after their completion of their tour of duty.",
+        "description": "I produced video content that documented the journey of NSFs completing their National Service in 2 SIR, as well as video highlights of key bilateral exercises between Singapore and its neighboring countries and Change of Command videos, which feature well wishes for commanders as a heartfelt farewell after their completion of their tour of duty.",
         "images": [
           "images/video/2SIR/BDECOC.jpg",
           "images/video/2SIR/cool.jpg",
@@ -104,12 +104,13 @@
         "company": "Singapore Army",
         "title": "Video Producer",
         "years": "11.2022 - Present",
+        "description": "Produced and directed highlight videos of military training in 2 SIR, as well as key bilateral exercises between Singapore and its neighboring countries; made Change of Command videos, featuring well wishes for unit and brigade commanders as a heartfelt farewell after completion of their tour of duty.",
         "mainTech": [
           "Sony Vegas Pro"
         ],
         "achievements": [
-          "Produce videos featuring the journey of NSFs in 2 SIR",
-          "Won Commanding Officer Coin for covering Exercise Maju Bersama, a bilateral exercise between Singapore and Brunei"
+          "Awarded the Commanding Officer Coin for providing excellent video coverage for Exercise Maju Bersama, a military bilateral exercise between Singapore and Brunei.",
+          "Featured on the official Singapore Army social media (YouTube, Facebook, Instagram, etc) for Exercise SAFKAR Indopura, a bilateral exercise between Singapore and Indonesia. The various social media uploads are linked at top right corner."
         ],
         "technologies": [
           "Sony Vegas Pro",
@@ -117,38 +118,59 @@
           "Adobe Photoshop",
           "Canva"
         ],
-        "icon": "fas fa-swords"
+        "icon": "fas fa-swords",
+        "experienceIcons": [
+          {
+            "url": "https://www.facebook.com/oursingaporearmy/videos/271071232385057",
+            "url_icon": "fab fa-facebook fa-3x"
+          },
+          {
+            "url": "https://www.instagram.com/reel/Cwq2zGihxBq/?utm_source=ig_web_copy_link",
+            "url_icon": "fab fa-instagram fa-3x"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=5TzjtVm8RdU",
+            "url_icon": "fab fa-youtube fa-3x"
+          }
+        ]
       },
       {
         "company": "YouTuber",
-        "title": "Binner - A Minecraft Channel",
+        "title": "Binner - A Gaming Channel",
         "years": "02.2017 - 01.2021",
+        "description": "Ran a Minecraft Channel that focused on Hypixel Skyblock, an MMORPG built in Minecraft. This experience allowed me to gain insight into what it takes to be a successful social media influencer, as well as the key metrics that drives clicks and holds attention in a digital space. Here are the achieved metrics:",
         "mainTech": [
           "Minecraft"
         ],
         "achievements": [
-          "A Minecraft Channel that focused on Hypixel Skyblock, a MMORPG built in Minecraft",
-          "Over 17,000 Subscribers",
-          "Over 3,000,000 Views",
-          "Over 10,000,000 Minutes of Watch-time"
+          "Gained over 17,000 Subscribers",
+          "Gained over 3,000,000 Views",
+          "Gained over 10,000,000 Minutes of Watch-Time",
+          "Generated over $6,000 in lifetime revenue"
         ],
         "technologies": [
           "OBS",
           "Sony Vegas Pro"
         ],
         "icon": "fab fa-youtube",
-        "url": "https://www.youtube.com/c/binnerminecraft",
-        "url_icon": "fab fa-youtube fa-3x"
+        "experienceIcons": [
+          {
+            "url": "https://www.youtube.com/c/binnerminecraft",
+            "url_icon": "fab fa-youtube fa-3x"
+          }
+        ]
       },
       {
         "company": "99.co",
         "title": "Content Writer",
         "years": "08.2019",
+        "description": "",
         "mainTech": [
           "Search Engine Optimisation"
         ],
         "achievements": [
-          "Wrote articles for 99.co regarding housing and development"
+          "Wrote articles for 99.co regarding housing and development, improving their site's SEO on Google",
+          "Helped staff with issues they had with their Python software"
         ],
         "technologies": [
           "Web Content Writing",
@@ -156,8 +178,12 @@
           "Digital Marketing"
         ],
         "icon": "far fa-search-location",
-        "url": "https://www.99.co/singapore/insider/urban-farming-tips-for-non-landed-properties/",
-        "url_icon": "fad fa-browser fa-3x"
+        "experienceIcons": [
+          {
+            "url": "https://www.99.co/singapore/insider/urban-farming-tips-for-non-landed-properties/",
+            "url_icon": "fad fa-browser fa-3x"
+          }
+        ]
       }
     ]
   }
