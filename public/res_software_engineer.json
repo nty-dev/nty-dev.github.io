@@ -103,6 +103,35 @@
     ],
     "experience": [
       {
+        "company": "ArcLab",
+        "title": "Software Engineer Intern",
+        "years": "02.2024 - 07.2024",
+        "mainTech": [
+          "Python",
+          "WordPress"
+        ],
+        "achievements": [
+          "Helped resolve 15 issues on Github, implementing 9 new features & resolving 6 bugs.",
+          "Migrated video player within the application from the default HTML player to VideoJS - a secure, standardized library - to implement features requested by clients.",
+          "Aided with building the large-scale implementation of multi-user teams - a project aimed at allowing multiple users to work concurrently on projects & introducing permission systems - contributing mainly to the logging system.",
+          ["Contributed to the data structure design of how logs are stored and retrieved for use - to enable a flexible system that allows for accurate searchability.",
+           "Built the logging system's front-end UI and implemented the back-end API to retrieve data from the database."],
+           "Worked with the React.js/Nodejs/MongoDB tech stack, gaining significant experience working with key packages with React like Redux to achieve the above stated implementations."
+        ],
+        "technologies": [
+          "Python",
+          "Google API",
+          "WordPress"
+        ],
+        "icon": "fas fa-file-invoice-dollar",
+        "experienceIcons": [
+          {
+            "url": "https://github.com/nty-dev/REN_inv_mgmt",
+            "url_icon": "fab fa-github fa-3x"
+          }
+        ]
+      },
+      {
         "company": "Raffles Entrepreneur's Network",
         "title": "Software Engineer",
         "years": "02.2020 - 08.2021",

@@ -98,6 +98,27 @@
     ],
     "experience": [
       {
+        "company": "ArcLab",
+        "title": "Software Engineer Intern",
+        "years": "02.2024 - 07.2024",
+        "mainTech": [
+          "Python",
+          "WordPress"
+        ],
+        "achievements": [
+          "Wrote a Python Script that helped with inventory accounting, resulting in a 10% reduction in sale time and 90% time reduction in profit and stocks accounting post sale",
+          "Designed a WordPress website to help the CCA's marketing effort, resulting in increased sales"
+        ],
+        "technologies": [
+          "Python",
+          "Google API",
+          "WordPress"
+        ],
+        "icon": "fas fa-file-invoice-dollar",
+        "url": "https://github.com/nty-dev/REN_inv_mgmt",
+        "url_icon": "fab fa-github fa-3x"
+      },
+      {
         "company": "Raffles Entrepreneur's Network",
         "title": "Software Engineer",
         "years": "02.2020 - 08.2021",

@@ -39,11 +39,26 @@ class Experience extends Component {
           );
         });
         var mainAch = mainAchievements.map((ach, i) => {
-          return (
-            <li>
-              {ach}
-            </li>
-          )
+          if (Array.isArray(ach)) {
+            var subAch = ach.map((s, i) => {
+              return (
+                <li>
+                  {s}
+                </li>
+              )
+            })
+            return (
+              <ul>
+                {subAch}
+              </ul>
+            )
+          } else {
+            return (
+              <li>
+                {ach}
+              </li>
+            )
+          }
         });
 
         var icon_class = work.icon + " experience-icon"
