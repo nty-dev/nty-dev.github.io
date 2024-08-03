@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Typical from "react-typical";
 
 class Contact extends Component {
   render() {
