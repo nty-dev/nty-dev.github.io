@@ -14,6 +14,15 @@ class Experience extends Component {
         const technologies = work.technologies;
         const mainTechnologies = work.mainTech;
         const mainAchievements = work.achievements;
+        const mainIcons = work.experienceIcons;
+
+        var expIcons = mainIcons.map((iconinfo, i) => {
+          return(
+            <a href={iconinfo.url} target="_blank" rel="noopener noreferrer">
+              <i className={iconinfo.url_icon + " experience-url-icon"}></i>
+            </a>
+          )
+        })
 
         var mainTech = mainTechnologies.map((technology, i) => {
           return (
@@ -31,9 +40,9 @@ class Experience extends Component {
         });
         var mainAch = mainAchievements.map((ach, i) => {
           return (
-            <text>
-              - {ach} <br />
-            </text>
+            <li>
+              {ach}
+            </li>
           )
         });
 
@@ -55,9 +64,7 @@ class Experience extends Component {
             <div style={{ textAlign: "left", marginBottom: "4px" }}>
               {mainTech}
               <span className="experience-link">
-                <a href={work.url} target="_blank" rel="noopener noreferrer">
-                  <i className={work.url_icon + " experience-url-icon"}></i>
-                </a>
+                {expIcons}
               </span>
             </div>
 
@@ -74,7 +81,12 @@ class Experience extends Component {
               {work.company}
             </h4>
             <div style={{height:10}} />
-            <div>{mainAch}</div>
+            <div>{work.description}</div>
+            <div>
+              <ul class="experience-list">
+                {mainAch}
+              </ul>
+            </div>
             <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div>
           </VerticalTimelineElement>
         );

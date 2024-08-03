@@ -16,7 +16,7 @@ class Contact extends Component {
     }
 
     return(
-      <section id="contact" style={{display: 'block' }}>
+      <section id="contact" style={{display: 'block'}}>
         <div className="col-md-12">
           <h1 className="section-title" style={{ color: "black" }}>
             <span>Contact Me</span>
@@ -31,6 +31,7 @@ class Contact extends Component {
                       src="website-icon.svg"
                       alt="Avatar placeholder"
                       style={{float: "left"}}
+                      className="contact-meet-image"
                     />
                     <div className="contact-meet-text">
                       <br />
@@ -55,6 +56,7 @@ class Contact extends Component {
             </div>
           </div>
         </div>
+        <div className="contact-color" style={{height: 1}}/>
       </section>
     )
   }

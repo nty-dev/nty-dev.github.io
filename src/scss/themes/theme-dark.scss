@@ -103,6 +103,30 @@ body[data-theme="dark"] {
       }
    }
 
+   .contact-meet-span {
+     background: #6d6d6d;
+   }
+
+   .contact-meet-text {
+     color: white;
+   }
+
+   .contact-meet-line {
+     border-top: 3px solid white;
+   }
+
+   .contact-meet-image {
+     filter: invert(100%);
+   }
+
+   .contact-color {
+     color: #494949
+   }
+
+   .contact-meet-details {
+     color: white;
+   }
+
    .modal-inside .modal-content {
       background: #5b5b5b;
       color: white;
