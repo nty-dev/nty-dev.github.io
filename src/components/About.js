@@ -83,9 +83,6 @@ class About extends Component {
                     <br />
                     <br />
                     <span className="bold-about-line">{about_bold}</span>
-                    <br />
-                    <br />
-                    <text>I am currently serving my National Service, ORD'ing 7 Feb 2024.</text>
                   </div>
                 </div>
               </div>
