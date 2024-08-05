@@ -1,8 +1,8 @@
 {
     "basic_info": {
       "description_header": "Hello!",
-      "description": "I am Tsay Yong, an aspiring software engineer who has been at it since 2017, currently based in Singapore. I am a full-stack developer, with Javascript(~3 YOE) and Python(~5 YOE) as my languages of choice. Having taken part in tons of startup hackathons, as well as done plenty of personal projects, I have good experience with cross-platform development frameworks, for building mobile applications, alongside great backend development experience with frameworks like Django.",
-      "description_2": "With approximately five years of experience in YouTube content creation and various video production endeavors, I have developed extensive expertise in the realm of digital marketing and visual computing (click on portfolio switch to learn more). Moreover, my recent exploration of finance has piqued my interest, leading me to delve into investment research for personal enjoyment. I find games of probabilities, such as Poker, particularly captivating, and I am eager to explore potential opportunities in fields such as quantitative trading that show great relation to the great game of skilled chance.",
+      "description": "I am Tsay Yong, an aspiring software engineer who has been at it since 2017, currently based in Singapore. I am a full-stack developer, with Javascript(~4 YOE) and Python(~5 YOE) as my languages of choice. Having taken part in tons of startup hackathons, as well as done plenty of personal projects and internships, I have good experience with various frameworks, from cross-platform development frameworks like React Native, to backend frameworks like NodeJS and Django.",
+      "description_2": "I am currently pursuing a Bachelor's of Computing (CS) at NUS.",
       "description_bold": "I am excited to help you or your organization build the next big thing.",
       "section_name": {
         "about": "About me",
@@ -102,6 +102,37 @@
       }
     ],
     "experience": [
+      {
+        "company": "ArcLab",
+        "title": "Software Engineer Intern",
+        "years": "02.2024 - 07.2024",
+        "description": "Helped resolve 15 GitHub issues, implementing 9 new features & resolving 6 bugs. Most notable contributions as follows:",
+        "mainTech": [
+          "Javascript",
+          "React.js",
+          "Nodejs",
+          "MongoDB"
+        ],
+        "achievements": [
+          "Migrated video player within the application from the default HTML player to VideoJS - a secure, standardized library - to implement features requested by clients.",
+          "Aided with building the large-scale implementation of multi-user teams - a project aimed at allowing multiple users to work concurrently on projects & introducing permission systems - contributing mainly to the logging system.",
+          ["Contributed to the data structure design of how logs are stored and retrieved for use - to enable a flexible system that allows for accurate searchability.",
+           "Built the logging system's front-end UI and implemented the back-end API to retrieve data from the database."],
+           "Built the front-end UI of User Themes - a project aimed at letting users create and store their own custom themes, instead of being limited to presets."
+        ],
+        "technologies": [
+          "Redux",
+          "VideoJS",
+          "Figma"
+        ],
+        "icon": "fad fa-code-merge",
+        "experienceIcons": [
+          {
+            "url": "https://arclab.io/",
+            "url_icon": "fad fa-browser fa-3x"
+          }
+        ]
+      },
       {
         "company": "Raffles Entrepreneur's Network",
         "title": "Software Engineer",
