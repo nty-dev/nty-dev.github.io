@@ -103,6 +103,54 @@
     ],
     "experience": [
       {
+        "company": "Circles",
+        "title": "Software Engineer Intern",
+        "years": "09.2024 - Present",
+        "description": "Contributing to the development of Jetpac, a New Business Build aiming to construct a software-as-a-service eSim platform.",
+        "mainTech": [
+          "React.js(TS)",
+          "Go",
+          "CockroachDB"
+        ],
+        "achievements": [
+          "Closed 6 React.js Jira tickets and implemented an API endpoint in the Golang REST Framework.",
+          "Working with the React.js(TS)/Golang/CockroachDB tech stack; learnt to use tools such as AWS, BitBucket, Jira, Dbeaver, Kubernetes and how to build software under the AGILE development methodologies."
+        ],
+        "technologies": [
+          "AWS",
+          "BitBucket",
+          "Jira",
+          "Dbeaver",
+          "Postman",
+          "Kubernetes"
+        ],
+        "icon": "fad fa-code-merge",
+        "experienceIcons": [
+          {
+            "url": "https://travel.circles.life/shop/single-pack/",
+            "url_icon": "fab fa-browser fa-3x"
+          }
+        ]
+      },
+      {
+        "company": "Google Developers' Student Club (NUS)",
+        "title": "Software Engineer",
+        "years": "08.2024 - Present",
+        "description": "Part of the Open Government Products Team, a team aiming to contribute to open source projects of the Singapore Government.",
+        "mainTech": [
+          "GitHub"
+        ],
+        "achievements": [],
+        "technologies": [],
+        "icon": "fab fa-google",
+        "experienceIcons": [
+          {
+            "url": "https://developers.google.com/community/gdsc",
+            "url_icon": "fab fa-google fa-3x"
+          }
+        ]
+      },
+      {
         "company": "ArcLab",
         "title": "Software Engineer Intern",
         "years": "02.2024 - 07.2024",
