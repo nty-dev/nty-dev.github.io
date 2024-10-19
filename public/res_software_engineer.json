@@ -106,14 +106,17 @@
         "company": "Circles",
         "title": "Software Engineer Intern",
         "years": "09.2024 - Present",
-        "description": "Contributing to the development of Jetpac, a New Business Build aiming to construct a software-as-a-service eSim platform.",
+        "description": "",
         "mainTech": [
           "React.js(TS)",
           "Go",
           "CockroachDB"
         ],
         "achievements": [
-          "Closed 6 React.js Jira tickets and implemented an API endpoint in the Golang REST Framework.",
+          "Contributing to the development of Jetpac, a software-as-a-service eSim platform responsible for generating $5,000,000 ARR.",
+          "Closed 15 Jira tickets, which include contributions to various parts of the stack, from React.js, AWS to the Golang backend.",
+          "Implemented 6 CRUD API endpoints for Catalog Pages, connecting them with foreign key relationships to Catalog databases.",
+          "Created and deployed 4 email workflows on AWS SES & integrated backend for automated eCommerce purchase communications.",
           "Working with the React.js(TS)/Golang/CockroachDB tech stack; learnt to use tools such as AWS, BitBucket, Jira, Dbeaver, Kubernetes and how to build software under the AGILE development methodologies."
         ],
         "technologies": [
