@@ -1,14 +1,15 @@
 {
     "basic_info": {
       "description_header": "Hello!",
-      "description": "I am Tsay Yong, an aspiring software engineer who has been at it since 2017, currently based in Singapore. I am a full-stack developer, with Javascript(~4 YOE) and Python(~5 YOE) as my languages of choice. Having taken part in tons of startup hackathons, as well as done plenty of personal projects and internships, I have good experience with various frameworks, from cross-platform development frameworks like React Native, to backend frameworks like NodeJS and Django.",
-      "description_2": "I am currently pursuing a Bachelor's of Computing (CS) at NUS.",
-      "description_bold": "I am excited to help you or your organization build the next big thing.",
+      "description": "I'm Tsay Yong, a software engineer with over half a decade of experience building full-stack applications. I've shipped production code across finance, SaaS, and startup environments, working across the full stack in Python, JavaScript, and Java.",
+      "description_2": "I'm currently pursuing a degree in Computer Science at NUS.",
+      "description_bold": "I write clean, scalable software — and I'm excited to help build your next big thing.",
       "section_name": {
         "about": "About me",
         "projects": "Showroom",
         "skills": "Skills",
-        "experience": "Experience"
+        "experience": "Experience",
+        "tech_label": "Tech Stack"
       },
       "mainTechnologies": [
         "fab fa-python",
@@ -73,6 +74,12 @@
         "company": "Jane Street Capital",
         "title": "Software Engineer Intern",
         "years": "Incoming May 2026",
+        "dynamicDates": {
+          "start": "2026-05-18",
+          "end": "2026-08-08",
+          "startLabel": "May 2026",
+          "endLabel": "Aug 2026"
+        },
         "mainTech": [],
         "icon": "fad fa-chart-line",
         "experienceIcons": [
@@ -84,7 +91,7 @@
         "title": "Software Engineer Intern",
         "years": "May 2025 – Nov 2025",
         "mainTech": ["React.js", "Django", "PostgreSQL", "Python"],
-        "icon": "fad fa-database",
+        "icon": "fas fa-chart-bar",
         "experienceIcons": [
           { "url": "https://www.squarepoint-capital.com/", "url_icon": "fad fa-browser fa-3x" }
         ]
@@ -104,25 +111,17 @@
         "title": "Software Engineer Intern",
         "years": "Feb 2024 – Jul 2024",
         "mainTech": ["React.js", "Node.js", "MongoDB", "Redux"],
-        "icon": "fad fa-code-merge",
+        "icon": "fas fa-laptop-code",
         "experienceIcons": [
           { "url": "https://arclab.io/", "url_icon": "fad fa-browser fa-3x" }
         ]
-      },
-      {
-        "company": "Gnowbe Pte Ltd",
-        "title": "Software Engineer Intern",
-        "years": "Sep 2019",
-        "mainTech": ["Python", "NLP"],
-        "icon": "far fa-money-check-edit",
-        "experienceIcons": []
       },
       {
         "company": "Raffles Entrepreneur's Network",
         "title": "Software Engineer / Tech Lead",
         "years": "Feb 2020 – Aug 2021",
         "mainTech": ["Python", "WordPress"],
-        "icon": "fas fa-file-invoice-dollar",
+        "icon": "fas fa-lightbulb",
         "experienceIcons": [
           { "url": "https://github.com/nty-dev/REN_inv_mgmt", "url_icon": "fab fa-github fa-3x" }
         ]
@@ -132,10 +131,18 @@
         "title": "ZapQ — Virtual Queuing App",
         "years": "Jun 2021",
         "mainTech": ["React Native", "Django"],
-        "icon": "fas fa-code",
+        "icon": "fas fa-trophy",
         "experienceIcons": [
           { "url": "https://github.com/ChenNuode/hafFULLhafempty", "url_icon": "fab fa-github fa-3x" }
         ]
+      },
+      {
+        "company": "Gnowbe Pte Ltd",
+        "title": "Software Engineer Intern",
+        "years": "Sep 2019",
+        "mainTech": ["Python", "NLP"],
+        "icon": "fas fa-brain",
+        "experienceIcons": []
       },
       {
         "company": "School Final Project",

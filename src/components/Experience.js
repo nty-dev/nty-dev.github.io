@@ -6,10 +6,20 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import Badge from "react-bootstrap/Badge";
 
+function resolveYears(work) {
+  if (!work.dynamicDates) return work.years;
+  const { start, end, startLabel, endLabel } = work.dynamicDates;
+  const today = new Date();
+  if (today < new Date(start)) return work.years;
+  if (today < new Date(end)) return `${startLabel} \u2013 Present`;
+  return `${startLabel} \u2013 ${endLabel}`;
+}
+
 class Experience extends Component {
   render() {
     if (this.props.resumeExperience && this.props.resumeBasicInfo) {
       var sectionName = this.props.resumeBasicInfo.section_name.experience;
+      var techLabel = this.props.resumeBasicInfo.section_name.tech_label || "Tech Stack";
       var work = this.props.resumeExperience.map(function (work, i) {
         const mainIcons = work.experienceIcons;
         const tech = work.mainTech || [];
@@ -58,13 +68,13 @@ class Experience extends Component {
             </div>
 
             <div className="experience-date-chip">
-              <i className="far fa-calendar-alt mr-1"></i>
-              {work.years}
+              <i className="far fa-calendar-alt mr-2"></i>
+              {resolveYears(work)}
             </div>
 
             {techBadges.length > 0 && (
               <div className="experience-card-tech">
-                <span className="experience-tech-label">Tech Stack</span>
+                <span className="experience-tech-label">{techLabel}</span>
                 <div className="mt-1">{techBadges}</div>
               </div>
             )}
