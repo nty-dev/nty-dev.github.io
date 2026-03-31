@@ -1,14 +1,15 @@
 {
     "basic_info": {
       "description_header": "Hello!",
-      "description": "I am Tsay Yong, a video producer and content creator, currently based in Singapore. I ran a Gaming YouTube Channel, which I started in 2017, that to date has gained over 17,000 subscribers, 3,000,000 views and over 10,000,000 minutes of watch-time. My area of expertise lies with video editing, where I possess over 6 years of hands-on experience. I am well-versed in utilizing platforms like Sony Vegas Pro and Adobe After Effects, which are my primary tools for crafting captivating visuals. With exposure to a content writing internship, I have tons of experience dealing with digital media and know the key metrics that drive clicks and hold attention in a digital space.",
-      "description_2": "Having run a decently successful YouTube channel and substantial knowledge with software engineering, I am familiar with all sides of the coin when it comes to successful and effective digital marketing. With my recent experience covering media for the Singapore Army, I have the required understanding to edit your montages, wedding videos or movies - with added effects too!",
-      "description_bold": "I am excited to bring your visions and ideas to life.",
+      "description": "I'm Tsay Yong, a video producer and content creator with years of hands-on experience across editing, production, and digital media. I'm comfortable across the full pipeline — from raw footage to polished final cut — and have worked across a range of formats, from short-form social content to long-form productions.",
+      "description_2": "I have a strong eye for pacing, visual storytelling, and the kind of detail that separates good work from great work.",
+      "description_bold": "I'm excited to bring your visions and ideas to life.",
       "section_name": {
         "about": "About me",
         "projects": "Showroom",
         "skills": "Skills",
-        "experience": "Experience"
+        "experience": "Experience",
+        "tech_label": "Tools Used"
       },
       "mainTechnologies": [
         "sony-vegas",
@@ -103,7 +104,7 @@
       {
         "company": "Singapore Army",
         "title": "Video Producer",
-        "years": "11.2022 - Present",
+        "years": "Nov 2022 – Present",
         "description": "Produced and directed highlight videos of military training in 2 SIR, as well as key bilateral exercises between Singapore and its neighboring countries; made Change of Command videos, featuring well wishes for unit and brigade commanders as a heartfelt farewell after completion of their tour of duty.",
         "mainTech": [
           "Sony Vegas Pro"
@@ -118,7 +119,7 @@
           "Adobe Photoshop",
           "Canva"
         ],
-        "icon": "fas fa-swords",
+        "icon": "fas fa-shield-alt",
         "experienceIcons": [
           {
             "url": "https://www.facebook.com/oursingaporearmy/videos/271071232385057",
@@ -137,7 +138,7 @@
       {
         "company": "YouTuber",
         "title": "Binner - A Gaming Channel",
-        "years": "02.2017 - 01.2021",
+        "years": "Feb 2017 – Jan 2021",
         "description": "Ran a Minecraft Channel that focused on Hypixel Skyblock, an MMORPG built in Minecraft. This experience allowed me to gain insight into what it takes to be a successful social media influencer, as well as the key metrics that drives clicks and holds attention in a digital space. Here are the achieved metrics:",
         "mainTech": [
           "Minecraft"
@@ -163,7 +164,7 @@
       {
         "company": "99.co",
         "title": "Content Writer",
-        "years": "08.2019",
+        "years": "Aug 2019",
         "description": "",
         "mainTech": [
           "Search Engine Optimisation"
@@ -177,7 +178,7 @@
           "SEO",
           "Digital Marketing"
         ],
-        "icon": "far fa-search-location",
+        "icon": "fas fa-pen-nib",
         "experienceIcons": [
           {
             "url": "https://www.99.co/singapore/insider/urban-farming-tips-for-non-landed-properties/",
