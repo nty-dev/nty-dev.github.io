@@ -99,23 +99,12 @@ body[data-theme="dark"] {
          background: #3f3f46;
       }
 
-      .vertical-timeline-element-content {
+      .vertical-timeline-element:not(:last-child) .vertical-timeline-element-content {
          background: #252528;
          box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
       }
 
-      .vertical-timeline-element:last-child .vertical-timeline-element-content {
-         background: transparent;
-         box-shadow: none;
-         padding: 0;
-         min-height: 0;
-      }
-
-      .vertical-timeline-element:last-child .vertical-timeline-element-content-arrow {
-         border-color: transparent;
-      }
-
-      .vertical-timeline-element-content-arrow {
+      .vertical-timeline-element:not(:last-child) .vertical-timeline-element-content-arrow {
          border-right-color: #252528;
       }
 
