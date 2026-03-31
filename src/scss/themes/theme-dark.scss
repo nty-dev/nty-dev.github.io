@@ -1,212 +1,273 @@
+// Dark theme colour system:
+//   A: #18181b  (near-black) — header, experience, showroom
+//   B: #1e2128  (dark blue-grey) — about, skills, contact
+//   Surface A:  #252528  (cards on A)
+//   Surface B:  #262b35  (cards on B)
+//   Gold:       #AE944F  (accent throughout)
+//   Text:       #e4e4e7  (primary)
+//   Text-muted: #a1a1aa  (secondary)
+
 body[data-theme="dark"] {
 
    @import '../src/scss/dark-slider.scss';
 
+   background-color: #18181b;
+   color: #e4e4e7;
+
    .slider-tab {
-      background-color: #8C8C8C;
+      background-color: #52525b;
    }
 
    .title-styles {
-      color: white;
+      color: #e4e4e7;
    }
 
    .header-icon {
-      color: #3C342C;
-      opacity: 0.8;
+      color: #AE944F;
+      opacity: 0.9;
    }
 
    .slider-image {
-      border: 5px solid #8C8C8C;
+      border: 5px solid #52525b;
    }
 
    .language {
-      background-color: #494949;
+      background-color: #27272a;
+      color: #e4e4e7;
    }
 
    .link-href {
-      color: white;
+      color: #e4e4e7;
    }
 
    .project-date {
-      background-color: #918e97;
-      color: white;
+      background-color: #52525b;
+      color: #e4e4e7;
    }
 
+   // ── Header ───────────────────────────────────────────
    header {
-      background-color: #494949;
-      h1 {
-         color: white;
-      }
+      background-color: #18181b;
+      h1 { color: #e4e4e7; }
    }
 
+   // ── About — B ─────────────────────────────────────────
    #about {
-      background-color: #7f7f7f;
-      h1 span {
-         color: white;
-      }
+      background-color: #1e2128;
+
+      h1 span { color: #e4e4e7; }
+
       .polaroid span {
-         background:  #6d6d6d;
+         background: #262b35;
+         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
       }
+
       .card {
-         background: #6d6d6d;
-         color: white;
+         background: #262b35;
+         color: #e4e4e7;
+         border-color: #363d4a;
+      }
+
+      .card-header {
+         background: #2e3444;
+         border-bottom-color: #363d4a;
       }
    }
 
-   #portfolio {
-      background: #5b5b5b;
-      .section-title {
-         color: white !important;
-      }
-      .foto div {
-         background: #6d6d6d;
-      }
-      .project-title-settings {
-         color: white;
+   .about-icons {
+      color: #AE944F;
+   }
+
+   // ── Skills — B ────────────────────────────────────────
+   #skills {
+      background: #1e2128;
+
+      .section-title { color: #e4e4e7 !important; }
+
+      .skills-tile {
+         background-color: rgba(255, 255, 255, 0.06);
       }
    }
 
-   #contact {
-      background: #494949;
-      h1 span {
-         color: white;
-      }
-   }
-
+   // ── Experience — A ────────────────────────────────────
    #resume {
-      filter: brightness(80%);
-      background: #5b5b5b;
-      .section-title {
-         color: white !important;
+      background: #18181b;
+
+      .section-title { color: #e4e4e7 !important; }
+
+      .vertical-timeline::before {
+         background: #3f3f46;
       }
 
-      .experience-badge {
-         background: #919191 !important;
-         color: white;
+      .vertical-timeline-element-content {
+         background: #252528;
+         box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
       }
 
-      .main-badge {
-         background: #919191 !important;
+      .vertical-timeline-element:last-child .vertical-timeline-element-content {
+         background: transparent;
+         box-shadow: none;
+         padding: 0;
+         min-height: 0;
+      }
+
+      .vertical-timeline-element:last-child .vertical-timeline-element-content-arrow {
+         border-color: transparent;
+      }
+
+      .vertical-timeline-element-content-arrow {
+         border-right-color: #252528;
+      }
+
+      .vertical-timeline-element-title {
+         color: #e4e4e7 !important;
+      }
+
+      .vertical-timeline-element-subtitle {
+         color: #a1a1aa !important;
       }
 
       .vertical-timeline-element-date {
-         color: white;
+         color: #a1a1aa;
       }
 
       .vertical-timeline-element-icon {
-         background: #919191 !important;
+         background: #AE944F !important;
+         box-shadow: 0 0 0 4px #3f3f46, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05);
       }
+
+      .main-badge {
+         background: #AE944F !important;
+         color: #fff;
+      }
+
+      .experience-badge {
+         background: #333336 !important;
+         color: #e4e4e7;
+      }
+
+      .experience-date-chip {
+         background-color: #3f3f46;
+         color: #a1a1aa;
+      }
+
+      .experience-card-tech {
+         border-top-color: #333336;
+      }
+
+      .experience-tech-label {
+         color: #AE944F;
+      }
+
+      .experience-card-titles .vertical-timeline-element-title {
+         color: #e4e4e7 !important;
+      }
+
+      .experience-card-titles .vertical-timeline-element-subtitle {
+         color: #a1a1aa !important;
+      }
+
+      .experience-url-icon {
+         color: #AE944F;
+      }
+
       @media only screen and (max-width: 1169px) {
          .vertical-timeline-element-date {
-            color: black;
+            color: #a1a1aa;
          }
       }
    }
 
-   .contact-meet-span {
-     background: #6d6d6d;
-   }
+   // ── Showroom — A ─────────────────────────────────────
+   #portfolio {
+      background: #18181b;
 
-   .contact-meet-text {
-     color: white;
-   }
+      .section-title { color: #e4e4e7 !important; }
 
-   .contact-meet-line {
-     border-top: 3px solid white;
-   }
+      .foto div {
+         background: #252528;
+         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      }
 
-   .contact-meet-image {
-     filter: invert(100%);
-   }
+      .foto div:after { color: #e4e4e7; }
 
-   .contact-color {
-     color: #494949
-   }
-
-   .contact-meet-details {
-     color: white;
+      .project-title-settings { color: #e4e4e7; }
    }
 
    .modal-inside .modal-content {
-      background: #5b5b5b;
-      color: white;
+      background: #252528;
+      color: #e4e4e7;
+      border-color: #3a3a3e;
    }
 
-   .close-icon {
-      color: white;
+   .close-icon { color: #e4e4e7; }
+
+   // ── Contact — B ───────────────────────────────────────
+   #contact {
+      background: #1e2128;
+
+      h1 span { color: #e4e4e7; }
    }
 
+   .contact-meet-span {
+      background: #262b35;
+   }
+
+   .contact-meet-text { color: #e4e4e7; }
+
+   .contact-meet-line { border-top: 3px solid #52525b; }
+
+   .contact-meet-image { filter: invert(90%) brightness(0.85); }
+
+   .contact-color { color: #18181b; }
+
+   .contact-meet-details { color: #e4e4e7; }
+
+   // ── Social links ─────────────────────────────────────
    .social-links-frontpage a,
-   .social-links-frontpage a:visited {
-   	color: white;
-   }
+   .social-links-frontpage a:visited { color: #e4e4e7; }
 
    .social-links-frontpage a:hover,
-   .social-links-frontpage a:focus {
-   	color: grey;
-   }
+   .social-links-frontpage a:focus   { color: #AE944F; }
+
+   // ── Navbar ───────────────────────────────────────────
+   .portfolio-switch-text { color: #e4e4e7; }
 
    .navbar-b.navbar-trans .nav-link,
-   .navbar-b.navbar-reduce .nav-link {
-     color: #fff;
-   }
+   .navbar-b.navbar-reduce .nav-link { color: #e4e4e7; }
 
-   .navbar-b.navbar-trans .nav-link:before {
-     background-color: #fff;
-   }
+   .navbar-b.navbar-trans .nav-link:before { background-color: #AE944F; }
 
-   .navbar-b.navbar-trans .nav-link:hover {
-     color: #fff;
-   }
+   .navbar-b.navbar-trans .nav-link:hover { color: #AE944F; }
 
    .navbar-b.navbar-trans .show > .nav-link,
    .navbar-b.navbar-trans .active > .nav-link,
    .navbar-b.navbar-trans .nav-link.show,
-   .navbar-b.navbar-trans .nav-link.active {
-     color: #fff;
-   }
+   .navbar-b.navbar-trans .nav-link.active { color: #AE944F; }
 
    .navbar-b.navbar-reduce {
-     transition: all .5s ease-in-out;
-     background-color: #000;
-     padding-top: 9px;
-     padding-bottom: 15px;
+      background-color: #18181b;
+      border-bottom: 1px solid #3f3f46;
    }
 
-   .navbar-b.navbar-reduce .nav-link {
-     color: #ebeaf5;
-   }
+   .navbar-b.navbar-reduce .nav-link { color: #e4e4e7; }
 
-   .navbar-b.navbar-reduce .nav-link:before {
-     background-color: #ebeaf5;
-   }
+   .navbar-b.navbar-reduce .nav-link:before { background-color: #AE944F; }
 
-   .navbar-b.navbar-reduce .nav-link:hover {
-     color: #ebeaf5;
-   }
+   .navbar-b.navbar-reduce .nav-link:hover { color: #AE944F; }
 
-   .navbar-b.navbar-reduce .navbar-brand {
-     color: #ebeaf5;
-   }
+   .navbar-b.navbar-reduce .navbar-brand { color: #e4e4e7; }
 
    .navbar-toggler span {
-     display: block;
-     background-color: #fff;
-     height: 3px;
-     width: 25px;
-     margin-top: 4px;
-     margin-bottom: 4px;
-     -webkit-transform: rotate(0deg);
-     transform: rotate(0deg);
-     left: 0;
-     opacity: 1;
-   }
-
-   .portfolio-switch-text {
-   	color: #fff;
-   }
-
-   .about-icons {
-     color: #fff;
+      display: block;
+      background-color: #e4e4e7;
+      height: 3px;
+      width: 25px;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      left: 0;
+      opacity: 1;
    }
 }
