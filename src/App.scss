@@ -499,19 +499,76 @@ header h1 {
 	height:25px;
 }
 
-.experience-link {
-	position: absolute;
-	right: 0;
-	margin-right:20px;
+.experience-card-header {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 10px;
 }
 
-.experience-list {
-	margin-left:-20px;
+.experience-card-titles {
+	flex: 1;
+
+	.vertical-timeline-element-title {
+		font-size: 16px;
+		font-weight: 700;
+		margin-bottom: 4px;
+		color: #222;
+	}
+
+	.vertical-timeline-element-subtitle {
+		font-size: 13px;
+		color: #666;
+		font-weight: 500;
+		letter-spacing: 0.3px;
+	}
+}
+
+.experience-link {
+	flex-shrink: 0;
+	margin-top: 2px;
+}
+
+.experience-date-chip {
+	display: inline-flex;
+	align-items: center;
+	margin-top: 10px;
+	padding: 3px 10px;
+	background-color: #4a4a4a;
+	color: #e8e8e8;
+	border-radius: 20px;
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 0.4px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.experience-card-tech {
+	margin-top: 14px;
+	padding-top: 12px;
+	border-top: 1px solid rgba(174, 148, 79, 0.25);
+}
+
+.experience-tech-label {
+	display: block;
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
+	color: #AE944F;
+	font-weight: 600;
+	margin-bottom: 6px;
+	font-family: 'opensans-bold', sans-serif;
 }
 
 .experience-url-icon {
-	color: #101314;
-	margin-left: 10px;
+	color: #AE944F;
+	margin-left: 8px;
+	font-size: 18px !important;
+	transition: opacity 0.2s ease;
+
+	&:hover {
+		opacity: 0.65;
+	}
 }
 
 

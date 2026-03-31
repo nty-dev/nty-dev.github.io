@@ -27,22 +27,10 @@
         "url": "https://github.com/nty-dev/Pixorift",
         "url_icon": "fab fa-github",
         "technologies": [
-          {
-            "class": "devicon-python-plain",
-            "name": "Python"
-          },
-          {
-            "class": "devicon-javascript-plain",
-            "name": "Javascript"
-          },
-          {
-            "class": "devicon-react-plain",
-            "name": "React Native"
-          },
-          {
-            "class": "devicon-django-plain",
-            "name": "Django"
-          }
+          { "class": "devicon-python-plain", "name": "Python" },
+          { "class": "devicon-javascript-plain", "name": "Javascript" },
+          { "class": "devicon-react-plain", "name": "React Native" },
+          { "class": "devicon-django-plain", "name": "Django" }
         ]
       },
       {
@@ -57,18 +45,9 @@
         "url": "https://github.com/nty-dev/class_minecraft_server_plugins",
         "url_icon": "fab fa-github",
         "technologies": [
-          {
-            "class": "devicon-java-plain",
-            "name": "Java"
-          },
-          {
-            "class": "papermc",
-            "name": "PaperMC"
-          },
-          {
-            "class": "craftbukkit",
-            "name": "CraftBukkit"
-          }
+          { "class": "devicon-java-plain", "name": "Java" },
+          { "class": "papermc", "name": "PaperMC" },
+          { "class": "craftbukkit", "name": "CraftBukkit" }
         ]
       },
       {
@@ -82,274 +61,90 @@
         "url": "https://github.com/ChenNuode/hafFULLhafempty",
         "url_icon": "fab fa-github",
         "technologies": [
-          {
-            "class": "devicon-python-plain",
-            "name": "Python"
-          },
-          {
-            "class": "devicon-javascript-plain",
-            "name": "Javascript"
-          },
-          {
-            "class": "devicon-react-plain",
-            "name": "React Native"
-          },
-          {
-            "class": "devicon-django-plain",
-            "name": "Django"
-          }
+          { "class": "devicon-python-plain", "name": "Python" },
+          { "class": "devicon-javascript-plain", "name": "Javascript" },
+          { "class": "devicon-react-plain", "name": "React Native" },
+          { "class": "devicon-django-plain", "name": "Django" }
         ]
       }
     ],
     "experience": [
       {
+        "company": "Jane Street Capital",
+        "title": "Software Engineer Intern",
+        "years": "Incoming May 2026",
+        "mainTech": [],
+        "icon": "fad fa-chart-line",
+        "experienceIcons": [
+          { "url": "https://www.janestreet.com/", "url_icon": "fad fa-browser fa-3x" }
+        ]
+      },
+      {
         "company": "Squarepoint Capital",
-        "title": "Software Developer Intern",
-        "years": "Starting 05.2025",
-        "description": "",
-        "mainTech": [
-        ],
-        "achievements": [
-          "Incoming May 2025"
-        ],
-        "technologies": [
-        ],
+        "title": "Software Engineer Intern",
+        "years": "May 2025 – Nov 2025",
+        "mainTech": ["React.js", "Django", "PostgreSQL", "Python"],
         "icon": "fad fa-database",
         "experienceIcons": [
-          {
-            "url": "https://www.squarepoint-capital.com/",
-            "url_icon": "fad fa-browser fa-3x"
-          }
+          { "url": "https://www.squarepoint-capital.com/", "url_icon": "fad fa-browser fa-3x" }
         ]
       },
       {
-        "company": "Circles",
+        "company": "Circles.Life",
         "title": "Software Engineer Intern",
-        "years": "09.2024 - 10.2024",
-        "description": "",
-        "mainTech": [
-          "React.js(TS)",
-          "Go",
-          "CockroachDB"
-        ],
-        "achievements": [
-          "Contributed to the development of Jetpac, a software-as-a-service eSim platform responsible for generating $5,000,000 ARR.",
-          "Closed 15 Jira tickets, which include contributions to various parts of the stack, from React.js, AWS to the Golang backend.",
-          "Implemented 6 CRUD API endpoints for Catalog Pages, connecting them with foreign key relationships to Catalog databases.",
-          "Created and deployed 4 email workflows on AWS SES & integrated backend for automated eCommerce purchase communications.",
-          "Worked with the React.js(TS)/Golang/CockroachDB tech stack; learnt to use tools such as AWS, BitBucket, Jira, Dbeaver, Kubernetes and how to build software under the AGILE development methodologies."
-        ],
-        "technologies": [
-          "AWS",
-          "BitBucket",
-          "Jira",
-          "Dbeaver",
-          "Postman",
-          "Kubernetes"
-        ],
+        "years": "Sep 2024 – Oct 2024",
+        "mainTech": ["React.js (TS)", "Go", "CockroachDB", "AWS"],
         "icon": "fas fa-sim-card",
         "experienceIcons": [
-          {
-            "url": "https://travel.circles.life/shop/single-pack/",
-            "url_icon": "fad fa-browser fa-3x"
-          }
-        ]
-      },
-      {
-        "company": "Google Developers' Student Club (NUS)",
-        "title": "Software Engineer",
-        "years": "08.2024 - Present",
-        "description": "Part of the Open Government Products Team, a team aiming to contribute to open source projects of the Singapore Government.",
-        "mainTech": [
-          "GitHub"
-        ],
-        "achievements": [],
-        "technologies": [],
-        "icon": "fab fa-google",
-        "experienceIcons": [
-          {
-            "url": "https://developers.google.com/community/gdsc",
-            "url_icon": "fab fa-google fa-3x"
-          }
+          { "url": "https://travel.circles.life/shop/single-pack/", "url_icon": "fad fa-browser fa-3x" }
         ]
       },
       {
         "company": "ArcLab",
         "title": "Software Engineer Intern",
-        "years": "02.2024 - 07.2024",
-        "description": "Helped resolve 15 GitHub issues, implementing 9 new features & resolving 6 bugs. Most notable contributions as follows:",
-        "mainTech": [
-          "Javascript",
-          "React.js",
-          "Nodejs",
-          "MongoDB"
-        ],
-        "achievements": [
-          "Migrated video player within the application from the default HTML player to VideoJS - a secure, standardized library - to implement features requested by clients.",
-          "Aided with building the large-scale implementation of multi-user teams - a project aimed at allowing multiple users to work concurrently on projects & introducing permission systems - contributing mainly to the logging system.",
-          ["Contributed to the data structure design of how logs are stored and retrieved for use - to enable a flexible system that allows for accurate searchability.",
-           "Built the logging system's front-end UI and implemented the back-end API to retrieve data from the database."],
-           "Built the front-end UI of User Themes - a project aimed at letting users create and store their own custom themes, instead of being limited to presets."
-        ],
-        "technologies": [
-          "Redux",
-          "VideoJS",
-          "Figma"
-        ],
+        "years": "Feb 2024 – Jul 2024",
+        "mainTech": ["React.js", "Node.js", "MongoDB", "Redux"],
         "icon": "fad fa-code-merge",
         "experienceIcons": [
-          {
-            "url": "https://arclab.io/",
-            "url_icon": "fad fa-browser fa-3x"
-          }
+          { "url": "https://arclab.io/", "url_icon": "fad fa-browser fa-3x" }
         ]
-      },
-      {
-        "company": "Raffles Entrepreneur's Network",
-        "title": "Software Engineer",
-        "years": "02.2020 - 08.2021",
-        "description": "Led the tech effort in digitizing the club; a few notable contributions are as follows:",
-        "mainTech": [
-          "Python",
-          "WordPress"
-        ],
-        "achievements": [
-          "Inventory Management Script: Wrote a script in Python that helped with accounting inventory for school merchandise sales during Entreweek 2020, which resulted in a ~10% reduction in sale time and a ~90% time reduction for accounting profits and stocks post-sale.",
-          "Website: Designed a WordPress website to help with the CCA's marketing effort, driving more traffic to the on-site stores and improving the sales funnel by providing an online alternative."
-        ],
-        "technologies": [
-          "Python",
-          "Google API",
-          "WordPress"
-        ],
-        "icon": "fas fa-file-invoice-dollar",
-        "experienceIcons": [
-          {
-            "url": "https://github.com/nty-dev/REN_inv_mgmt",
-            "url_icon": "fab fa-github fa-3x"
-          }
-        ]
-      },
-      {
-        "company": "DSTA BrainHack Code-EXP Hackathon",
-        "title": "ZapQ - a virtual queuing app",
-        "years": "06.2021",
-        "description": "Built this app with 3 friends as a solution to reduce transmission risk during COVID; my contributions are as follows:",
-        "mainTech": [
-          "React Native",
-          "Django"
-        ],
-        "achievements": [
-          "Developed the backend REST framework",
-          "Contributed to the System Design for the project"
-        ],
-        "technologies": [
-          "Javascript",
-          "Python",
-          "React Native",
-          "Django",
-          "GitHub"
-        ],
-        "icon": "fas fa-code",
-        "experienceIcons": [
-          {
-            "url": "https://github.com/ChenNuode/hafFULLhafempty",
-            "url_icon": "fab fa-github fa-3x"
-          }
-        ]
-      },
-      {
-        "company": "Class Server",
-        "title": "Minecraft Server Developer",
-        "years": "05.2020 - 01.2021",
-        "description": "Built a Minecraft server for my class, as a bonding activity during COVID:",
-        "mainTech": [
-          "Java"
-        ],
-        "achievements": [
-          "Deployed and balanced custom coded plugins written in Java",
-          "Maintained the server through balance updates and bug fixes"
-        ],
-        "technologies": [
-          "Java",
-          "PaperMC"
-        ],
-        "icon": "fab fa-java",
-        "experienceIcons": [
-          {
-            "url": "https://github.com/nty-dev/class_minecraft_server_plugins",
-            "url_icon": "fab fa-github fa-3x"
-          }
-        ]
-      },
-      {
-        "company": "DSTA",
-        "title": "Machine Learning Internship",
-        "years": "10.2019",
-        "mainTech": [
-          "Python"
-        ],
-        "achievements": [
-          "Built a predictive modeling system to pre-empt potential failures in ship systems",
-          "Learnt to use PyTorch to build decision trees for machine learning"
-        ],
-        "technologies": [
-          "Python",
-          "PyTorch",
-          "AI"
-        ],
-        "icon": "fas fa-ship",
-        "experienceIcons": []
       },
       {
         "company": "Gnowbe Pte Ltd",
-        "title": "Software Engineer Internship",
-        "years": "09.2019",
-        "description": "Interned with 2 friends, wrote software to improve their organizational efficiency; a few notable contributions are as follows:",
-        "mainTech": [
-          "Python"
-        ],
-        "achievements": [
-          "Project GAM(Gnowbe Auto-Marker): Wrote an auto-marking script in Python that assessed open-ended questions, using Natural Language Processing, helping Professors on the platform grade student assignments more efficiently. A score is given to each response.",
-          "Task-Management Scripts: Wrote a script in Python that helped sort out the staff's day to day schedule, reducing time wastage during the day."
-        ],
-        "technologies": [
-          "Python",
-          "Natural Language Processing",
-          "AI"
-        ],
+        "title": "Software Engineer Intern",
+        "years": "Sep 2019",
+        "mainTech": ["Python", "NLP"],
         "icon": "far fa-money-check-edit",
         "experienceIcons": []
       },
       {
+        "company": "Raffles Entrepreneur's Network",
+        "title": "Software Engineer / Tech Lead",
+        "years": "Feb 2020 – Aug 2021",
+        "mainTech": ["Python", "WordPress"],
+        "icon": "fas fa-file-invoice-dollar",
+        "experienceIcons": [
+          { "url": "https://github.com/nty-dev/REN_inv_mgmt", "url_icon": "fab fa-github fa-3x" }
+        ]
+      },
+      {
+        "company": "DSTA BrainHack Code-EXP",
+        "title": "ZapQ — Virtual Queuing App",
+        "years": "Jun 2021",
+        "mainTech": ["React Native", "Django"],
+        "icon": "fas fa-code",
+        "experienceIcons": [
+          { "url": "https://github.com/ChenNuode/hafFULLhafempty", "url_icon": "fab fa-github fa-3x" }
+        ]
+      },
+      {
         "company": "School Final Project",
-        "title": "Pixorift",
-        "years": "01.2019 - 10.2019",
-        "description": "Wrote an app that works essentially as a Scavenger Hunt, in which players have to find objects in the world to photograph. If the object recognition software passes the image, the user gets a point. The app has social functions to pair with the game.",
-        "mainTech": [
-          "React Native",
-          "Django"
-        ],
-        "achievements": [
-          "Wrote a cross-platform mobile application in React Native for the Front-End",
-          "Developed a Django REST Framework to function as the Back-End",
-          "Used Tensorflow to build the object recognition technology"
-        ],
-        "technologies": [
-          "Python",
-          "JavaScript",
-          "React Native",
-          "Django",
-          "REST framework",
-          "Tensorflow AI",
-          "Object Recognition"
-        ],
+        "title": "Pixorift — Scavenger Hunt App",
+        "years": "Jan 2019 – Oct 2019",
+        "mainTech": ["React Native", "Django", "TensorFlow"],
         "icon": "fas fa-mobile-alt",
         "experienceIcons": [
-          {
-            "url": "https://github.com/nty-dev/pixorift",
-            "url_icon": "fab fa-github fa-3x"
-          }
+          { "url": "https://github.com/nty-dev/pixorift", "url_icon": "fab fa-github fa-3x" }
         ]
       }
     ]

@@ -11,98 +11,63 @@ class Experience extends Component {
     if (this.props.resumeExperience && this.props.resumeBasicInfo) {
       var sectionName = this.props.resumeBasicInfo.section_name.experience;
       var work = this.props.resumeExperience.map(function (work, i) {
-        const technologies = work.technologies;
-        const mainTechnologies = work.mainTech;
-        const mainAchievements = work.achievements;
         const mainIcons = work.experienceIcons;
+        const tech = work.mainTech || [];
 
-        var expIcons = mainIcons.map((iconinfo, i) => {
-          return(
-            <a href={iconinfo.url} target="_blank" rel="noopener noreferrer">
-              <i className={iconinfo.url_icon + " experience-url-icon"}></i>
-            </a>
-          )
-        })
+        var expIcons = mainIcons.map((iconinfo, j) => (
+          <a
+            href={iconinfo.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            key={j}
+          >
+            <i className={iconinfo.url_icon + " experience-url-icon"}></i>
+          </a>
+        ));
 
-        var mainTech = mainTechnologies.map((technology, i) => {
-          return (
-            <Badge pill className="main-badge mr-2 mb-2" key={i}>
-              {technology}
-            </Badge>
-          );
-        });
-        var tech = technologies.map((technology, i) => {
-          return (
-            <Badge pill className="experience-badge mr-2 mb-2" key={i}>
-              {technology}
-            </Badge>
-          );
-        });
-        var mainAch = mainAchievements.map((ach, i) => {
-          if (Array.isArray(ach)) {
-            var subAch = ach.map((s, i) => {
-              return (
-                <li>
-                  {s}
-                </li>
-              )
-            })
-            return (
-              <ul>
-                {subAch}
-              </ul>
-            )
-          } else {
-            return (
-              <li>
-                {ach}
-              </li>
-            )
-          }
-        });
-
-        var icon_class = work.icon + " experience-icon"
-        var experience_icon = <i className={icon_class}></i>
+        var techBadges = tech.map((t, j) => (
+          <Badge pill className="main-badge mr-2 mb-2" key={j}>
+            {t}
+          </Badge>
+        ));
 
         return (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date={work.years}
+            date=""
             iconStyle={{
               background: "#AE944F",
               color: "#fff",
               textAlign: "center",
             }}
-            icon={experience_icon}
+            icon={<i className={work.icon + " experience-icon"}></i>}
             key={i}
           >
-            <div style={{ textAlign: "left", marginBottom: "4px" }}>
-              {mainTech}
-              <span className="experience-link">
-                {expIcons}
-              </span>
+            <div className="experience-card-header">
+              <div className="experience-card-titles">
+                <h3 className="vertical-timeline-element-title">
+                  {work.company}
+                </h3>
+                <h4 className="vertical-timeline-element-subtitle">
+                  {work.title}
+                </h4>
+              </div>
+              {expIcons.length > 0 && (
+                <div className="experience-link">{expIcons}</div>
+              )}
             </div>
 
-            <h3
-              className="vertical-timeline-element-title"
-              style={{ textAlign: "left" }}
-            >
-              {work.title}
-            </h3>
-            <h4
-              className="vertical-timeline-element-subtitle"
-              style={{ textAlign: "left" }}
-            >
-              {work.company}
-            </h4>
-            <div style={{height:10}} />
-            <div>{work.description}</div>
-            <div>
-              <ul class="experience-list">
-                {mainAch}
-              </ul>
+            <div className="experience-date-chip">
+              <i className="far fa-calendar-alt mr-1"></i>
+              {work.years}
             </div>
-            <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div>
+
+            {techBadges.length > 0 && (
+              <div className="experience-card-tech">
+                <span className="experience-tech-label">Tech Stack</span>
+                <div className="mt-1">{techBadges}</div>
+              </div>
+            )}
           </VerticalTimelineElement>
         );
       });
