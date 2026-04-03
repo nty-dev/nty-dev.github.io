@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Typical from "react-typical";
 import Switch from "react-switch";
 import "./stars.scss";
+import "./clouds.scss";
+import StarCanvas from "./StarCanvas";
 
 class Header extends Component {
   constructor() {
@@ -42,9 +44,25 @@ class Header extends Component {
 
     return (
       <header id="home" style={{ height: window.innerHeight, display: 'block' }}>
-        <div id="stars" />
-        <div id="stars2" />
-        <div id="stars3" />
+        <StarCanvas />
+        <div id="sky-animation">
+          <div className="sun-group">
+            <div className="sun-rays" />
+            <div className="sun" />
+          </div>
+          <div className="cloud cloud1" />
+          <div className="cloud cloud2" />
+          <div className="cloud cloud3" />
+          <div className="cloud cloud4" />
+          <div className="cloud cloud5" />
+          <div className="cloud cloud6" />
+          <div className="cloud cloud7" />
+          <div className="cloud cloud8" />
+          <div className="cloud cloud9" />
+          <div className="cloud cloud10" />
+          <div className="cloud cloud11" />
+          <div className="cloud cloud12" />
+        </div>
         <div className="row aligner" style={{height: '80%'}}>
           <div className="col-md-12">
             <div>

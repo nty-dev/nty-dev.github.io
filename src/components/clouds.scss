@@ -1,0 +1,209 @@
+/* ── Light-mode sky animation ── */
+
+/* Hide stars in light mode */
+body[data-theme="light"] .star-canvas {
+  display: none;
+}
+
+/* Sky gradient for light mode header */
+body[data-theme="light"] header {
+  background: linear-gradient(170deg, #3a7bd5 0%, #6aaee8 30%, #9dcef5 65%, #cce8fb 100%) !important;
+}
+
+/* Container */
+#sky-animation {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+body[data-theme="light"] #sky-animation {
+  display: block;
+}
+
+/* ── Sun group — positions both disc and rays together ── */
+.sun-group {
+  position: absolute;
+  top: 5%;
+  right: 8%;
+  width: 120px;
+  height: 120px;
+  z-index: 2;
+}
+
+/* ── Rays — large conic wheel, masked to show only the ray band ── */
+.sun-rays {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  /* 12 evenly-spaced rays, 10° wide with 20° gaps */
+  background: repeating-conic-gradient(
+    rgba(255, 218, 50, 0.30) 0deg 10deg,
+    transparent                10deg 30deg
+  );
+  /* fade-in just outside the disc, fade-out at outer edge */
+  -webkit-mask-image: radial-gradient(circle,
+    transparent   62px,
+    rgba(0,0,0,0.9) 80px,
+    black           115px,
+    rgba(0,0,0,0.5) 155px,
+    transparent     190px
+  );
+  mask-image: radial-gradient(circle,
+    transparent   62px,
+    rgba(0,0,0,0.9) 80px,
+    black           115px,
+    rgba(0,0,0,0.5) 155px,
+    transparent     190px
+  );
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: raysRotate 40s linear infinite;
+}
+
+@keyframes raysRotate {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* ── Sun disc — realistic limb-darkening gradient ── */
+.sun {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  /* White-hot core → golden yellow → warm orange at the limb, fading to nothing */
+  background: radial-gradient(circle,
+    #ffffff  0%,
+    #fffce0  10%,
+    #ffe566  28%,
+    #ffca00  48%,
+    #ff9800  68%,
+    #ff6f00  84%,
+    rgba(255, 90, 0, 0) 100%
+  );
+  box-shadow:
+    0 0  0  4px rgba(255, 255, 200, 0.45),   /* tight hot halo */
+    0 0 22px 9px rgba(255, 235, 80,  0.80),   /* inner corona */
+    0 0 55px 20px rgba(255, 190, 0,  0.55),   /* mid glow */
+    0 0 110px 45px rgba(255, 150, 0, 0.35),   /* outer glow */
+    0 0 190px 75px rgba(255, 110, 0, 0.18),   /* atmospheric scatter */
+    0 0 300px 110px rgba(255, 80, 0, 0.08);   /* horizon warmth */
+  animation: sunPulse 7s ease-in-out infinite;
+}
+
+@keyframes sunPulse {
+  0%, 100% {
+    box-shadow:
+      0 0  0  4px rgba(255, 255, 200, 0.45),
+      0 0 22px 9px rgba(255, 235, 80,  0.80),
+      0 0 55px 20px rgba(255, 190, 0,  0.55),
+      0 0 110px 45px rgba(255, 150, 0, 0.35),
+      0 0 190px 75px rgba(255, 110, 0, 0.18),
+      0 0 300px 110px rgba(255, 80, 0, 0.08);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow:
+      0 0  0  5px rgba(255, 255, 200, 0.60),
+      0 0 28px 13px rgba(255, 235, 80,  0.95),
+      0 0 70px 28px rgba(255, 190, 0,  0.70),
+      0 0 140px 58px rgba(255, 150, 0, 0.48),
+      0 0 240px 95px rgba(255, 110, 0, 0.25),
+      0 0 360px 130px rgba(255, 80, 0, 0.12);
+    transform: scale(1.04);
+  }
+}
+
+/* ── Cloud base ── */
+.cloud {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.93);
+  border-radius: 50px;
+  animation: floatCloud linear infinite;
+  filter: drop-shadow(0 4px 14px rgba(0, 80, 160, 0.13));
+}
+.cloud::before,
+.cloud::after {
+  content: '';
+  position: absolute;
+  background: rgba(255, 255, 255, 0.93);
+  border-radius: 50%;
+}
+
+/* ── Cloud definitions ── */
+
+/* 1 — large, slow */
+.cloud1  { width:220px; height:55px; top:18%; left:-250px; animation-duration:38s; animation-delay:-8s;  opacity:.93; }
+.cloud1::before { width:110px; height:90px;  top:-46px; left:32px;  }
+.cloud1::after  { width:80px;  height:68px;  top:-35px; left:112px; }
+
+/* 2 — medium */
+.cloud2  { width:150px; height:40px; top:10%; left:-180px; animation-duration:52s; animation-delay:-25s; opacity:.72; }
+.cloud2::before { width:80px; height:68px; top:-36px; left:20px; }
+.cloud2::after  { width:58px; height:52px; top:-26px; left:82px; }
+
+/* 3 — largest, slowest */
+.cloud3  { width:280px; height:65px; top:38%; left:-310px; animation-duration:65s; animation-delay:-35s; opacity:.85; }
+.cloud3::before { width:130px; height:105px; top:-54px; left:42px;  }
+.cloud3::after  { width:100px; height:85px;  top:-44px; left:148px; }
+
+/* 4 — small, brisk */
+.cloud4  { width:120px; height:32px; top:58%; left:-145px; animation-duration:44s; animation-delay:-12s; opacity:.65; }
+.cloud4::before { width:62px; height:56px; top:-30px; left:14px; }
+.cloud4::after  { width:46px; height:42px; top:-22px; left:64px; }
+
+/* 5 — medium, mid-pace */
+.cloud5  { width:190px; height:48px; top:72%; left:-220px; animation-duration:57s; animation-delay:-44s; opacity:.78; }
+.cloud5::before { width:95px; height:80px; top:-42px; left:26px;  }
+.cloud5::after  { width:68px; height:60px; top:-32px; left:100px; }
+
+/* 6 — tiny wisp, high */
+.cloud6  { width:90px; height:24px; top:5%; left:-110px; animation-duration:30s; animation-delay:-18s; opacity:.55; }
+.cloud6::before { width:46px; height:40px; top:-22px; left:10px; }
+.cloud6::after  { width:34px; height:30px; top:-16px; left:48px; }
+
+/* 7 — large, mid-level */
+.cloud7  { width:240px; height:58px; top:45%; left:-270px; animation-duration:48s; animation-delay:-20s; opacity:.82; }
+.cloud7::before { width:115px; height:95px; top:-50px; left:35px;  }
+.cloud7::after  { width:88px;  height:72px; top:-38px; left:125px; }
+
+/* 8 — small, high */
+.cloud8  { width:105px; height:28px; top:27%; left:-130px; animation-duration:33s; animation-delay:-6s;  opacity:.60; }
+.cloud8::before { width:55px; height:48px; top:-26px; left:12px; }
+.cloud8::after  { width:40px; height:36px; top:-18px; left:58px; }
+
+/* 9 — very large, low */
+.cloud9  { width:300px; height:70px; top:62%; left:-330px; animation-duration:72s; animation-delay:-55s; opacity:.88; }
+.cloud9::before { width:145px; height:115px; top:-60px; left:45px;  }
+.cloud9::after  { width:110px; height:92px;  top:-48px; left:160px; }
+
+/* 10 — tiny wisp, low */
+.cloud10 { width:80px; height:22px; top:82%; left:-100px; animation-duration:26s; animation-delay:-10s; opacity:.50; }
+.cloud10::before { width:40px; height:36px; top:-20px; left:8px;  }
+.cloud10::after  { width:30px; height:26px; top:-14px; left:44px; }
+
+/* 11 — medium, upper */
+.cloud11 { width:170px; height:44px; top:14%; left:-200px; animation-duration:43s; animation-delay:-32s; opacity:.70; }
+.cloud11::before { width:88px; height:74px; top:-40px; left:22px; }
+.cloud11::after  { width:62px; height:56px; top:-28px; left:92px; }
+
+/* 12 — large, mid-screen */
+.cloud12 { width:260px; height:62px; top:52%; left:-290px; animation-duration:62s; animation-delay:-48s; opacity:.80; }
+.cloud12::before { width:125px; height:100px; top:-52px; left:38px;  }
+.cloud12::after  { width:95px;  height:80px;  top:-42px; left:140px; }
+
+@keyframes floatCloud {
+  from { transform: translateX(0); }
+  to   { transform: translateX(calc(100vw + 350px)); }
+}
